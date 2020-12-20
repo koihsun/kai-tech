@@ -1,0 +1,293 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<!-- 網頁介紹文宣 -->
+<article class="banner d-none d-md-flex">
+  <div class=" container-fluid container-lg h-100">
+      <div class="d-flex align-items-center py-md-5 h-100">
+          <!-- 
+          <div class=" mr-md-8">
+              <img class="banner--logo mr-md-5" src="assets/images/banner-logo.jpg" alt="">
+          </div> -->
+          <div class="w-100">
+                <h4 class="banner--title font-weight-bold mb-md-2">臺北市私立讀家法律商業技藝文理短期補習班</h2>
+                <div class="d-flex justify-content-between align-items-end w-100">
+                    <p class="banner--description mb-0">專辦 司法特考・高普初考・各類特考・專業證照・大陸法考・兩岸培訓
+                        <p class="small text-right">北市教終字第10730162700號</p>
+                </div>
+
+          </div>
+      </div>
+  </div>
+</article>
+<!-- 輪播 -->
+<section class="">
+    <!-- Swiper 套件 -->
+    <div class="swiper-container w-100" id="banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper__slide">
+                <div class="bg-outer">
+                    <div class="swiper__content bg-image d-md-none" style="background-image: url(assets/images/mainvision--mobile.png);"></div>
+                    <div class="swiper__content bg-image d-none d-md-block" style="background-image: url(assets/images/mainvision.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper__slide">
+                <div class="bg-outer">
+                    <div class="swiper__content bg-image" style="background-image: url(assets/images/mainvision.png);"></div>
+                </div>
+            </div>
+            <div class="swiper-slide swiper__slide">
+                <div class="bg-outer">
+                    <div class="swiper__content bg-image" style="background-image: url(assets/images/mainvision.png);"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+    </div>
+</section>
+<!-- 試聽課程 -->
+<section class="video pt-6" data-aos="zoom-in-up">
+    <div class="container">
+        <h2 class="cs-title my-3 my-md-6" data-style="1"><span data-title="試聽課程 Video"></span></h2>
+        <ul class="row px-md-6">
+            <li class="col-12 col-md-4">
+                <div href="#" iv class="video__card card card-shadow card-hover-border mb-3 mb-md-0">
+                    <div class="video__img bg-outer">
+                        <div class="bg-image" style="background-image: url(assets/images/video-1.jpg);"></div>
+                    </div>
+                    <div class="card-body p-3 p-md-4">
+                        <h5 class="font-weight-bold">2020 解題改題班 法律廉政考題解析</h5>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p>試聽去</p>
+                            <button type="button" class="video-btn btn cs-listen p-2"  data-toggle="modal" data-src="https://www.youtube.com/embed/qDO1twqS9eg?rel=0&controls=1&enablejsapi=1&origin=http%3A%2F%2Fkai-tech.com.tw&widgetid=3" data-target="#myModal"><i class="fa fa-headphones fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-12 col-md-4">
+                <div href="#" iv class="video__card card card-shadow card-hover-border mb-3 mb-md-0">
+                    <div class="video__img bg-outer">
+                        <div class="bg-image" style="background-image: url(assets/images/video-2.jpg);"></div>
+                    </div>
+                    <div class="card-body p-3 p-md-4">
+                        <h5 class="font-weight-bold">2020 解題改題班 法律廉政考題解析</h5>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p>試聽去</p>
+                            <button type="button" class="video-btn btn cs-listen p-2"  data-toggle="modal" data-src="https://www.youtube.com/embed/qDO1twqS9eg?rel=0&controls=1&enablejsapi=1&origin=http%3A%2F%2Fkai-tech.com.tw&widgetid=3" data-target="#myModal"><i class="fa fa-headphones fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="col-12 col-md-4">
+                <div href="#" iv class="video__card card card-shadow card-hover-border mb-3 mb-md-0">
+                    <div class="video__img bg-outer">
+                        <div class="bg-image" style="background-image: url(assets/images/video-3.jpg);"></div>
+                    </div>
+                    <div class="card-body p-3 p-md-4">
+                        <h5 class="font-weight-bold">2020 解題改題班 法律廉政考題解析</h5>
+                        <div class="d-flex justify-content-end align-items-center">
+                            <p>試聽去</p>
+                            <button type="button" class="video-btn btn cs-listen p-2"  data-toggle="modal" data-src="https://www.youtube.com/embed/qDO1twqS9eg?rel=0&controls=1&enablejsapi=1&origin=http%3A%2F%2Fkai-tech.com.tw&widgetid=3" data-target="#myModal"><i class="fa fa-headphones fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="text-center mt-3 mt-md-8">
+            <button type="button" class="btn btn-primary text-nowrap border-radius-l btn-hover-accent btn-hover-shadow btn-hover-focus px-4 py-2 px-md-8 py-md-4">觀看更多 More</button>
+        </div>
+    </div>
+</section>
+<!-- 精選課程 -->
+<section class="hot pt-6" data-aos="zoom-in-up">
+    <div class="container">
+        <h2 class="cs-title my-3 my-md-6" data-style="1"><span data-title="精選課程 Hot Course"></span></h2>
+        <div class="swiper-container" id="hot">
+            <ul class="swiper-wrapper row flex-nowrap flex-md-wrap px-md-6 swiper-no-swiping">
+                <li class="swiper-slide col-12 col-md-4">
+                    <a href="#" iv class="hot__card card card-shadow card-hover-move text-decoration-none mb-6">
+                        <div class="hot__img bg-outer">
+                            <div class="bg-image" style="background-image: url(assets/images/hotcourse.jpg);"></div>
+                        </div>
+                        <h5 class="hot__title">司法特考</h5>
+                        <div class="card-body hot__content">
+                            <h5 class="card-title font-weight-bold">三等司法官</h5>
+                            <p class="card-text">課程介紹課程介紹課程介紹課程介紹
+                                課程介紹課程介紹課程介紹課程介紹</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide col-12 col-md-4">
+                    <a href="#" iv class="hot__card card card-shadow card-hover-move text-decoration-none mb-6">
+                        <div class="hot__img bg-outer">
+                            <div class="bg-image" style="background-image: url(assets/images/hotcourse.jpg);"></div>
+                        </div>
+                        <h5 class="hot__title">司法特考</h5>
+                        <div class="card-body hot__content">
+                            <h5 class="card-title font-weight-bold">三等司法官</h5>
+                            <p class="card-text">課程介紹課程介紹課程介紹課程介紹
+                                課程介紹課程介紹課程介紹課程介紹</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide col-12 col-md-4">
+                    <a href="#" iv class="hot__card card card-shadow card-hover-move text-decoration-none mb-6">
+                        <div class="hot__img bg-outer">
+                            <div class="bg-image" style="background-image: url(assets/images/hotcourse.jpg);"></div>
+                        </div>
+                        <h5 class="hot__title">司法特考</h5>
+                        <div class="card-body hot__content">
+                            <h5 class="card-title font-weight-bold">三等司法官</h5>
+                            <p class="card-text">課程介紹課程介紹課程介紹課程介紹
+                                課程介紹課程介紹課程介紹課程介紹</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide col-12 col-md-4">
+                    <a href="#" iv class="hot__card card card-shadow card-hover-move text-decoration-none mb-6">
+                        <div class="hot__img bg-outer">
+                            <div class="bg-image" style="background-image: url(assets/images/hotcourse.jpg);"></div>
+                        </div>
+                        <h5 class="hot__title">司法特考</h5>
+                        <div class="card-body hot__content">
+                            <h5 class="card-title font-weight-bold">三等司法官</h5>
+                            <p class="card-text">課程介紹課程介紹課程介紹課程介紹
+                                課程介紹課程介紹課程介紹課程介紹</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide col-12 col-md-4">
+                    <a href="#" iv class="hot__card card card-shadow card-hover-move text-decoration-none mb-6">
+                        <div class="hot__img bg-outer">
+                            <div class="bg-image" style="background-image: url(assets/images/hotcourse.jpg);"></div>
+                        </div>
+                        <h5 class="hot__title">司法特考</h5>
+                        <div class="card-body hot__content">
+                            <h5 class="card-title font-weight-bold">三等司法官</h5>
+                            <p class="card-text">課程介紹課程介紹課程介紹課程介紹
+                                課程介紹課程介紹課程介紹課程介紹</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide col-12 col-md-4">
+                    <a href="#" iv class="hot__card card card-shadow card-hover-move text-decoration-none mb-6">
+                        <div class="hot__img bg-outer">
+                            <div class="bg-image" style="background-image: url(assets/images/hotcourse.jpg);"></div>
+                        </div>
+                        <h5 class="hot__title">司法特考</h5>
+                        <div class="card-body hot__content">
+                            <h5 class="card-title font-weight-bold">三等司法官</h5>
+                            <p class="card-text">課程介紹課程介紹課程介紹課程介紹
+                                課程介紹課程介紹課程介紹課程介紹</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next d-md-none"></div>
+            <div class="swiper-button-prev d-md-none"></div>
+        </div>
+        <!-- 一般版本 開始 -->
+        <!-- <div class="row px-md-6">
+            <div class="col-6 col-md-4">
+                <a href="#" iv class="hot__card card card-shadow card-hover-move text-decoration-none mb-3">
+                    <div class="hot__img bg-outer">
+                        <div class="bg-image" style="background-image: url(assets/images/hotcourse.jpg);"></div>
+                    </div>
+                    <h5 class="hot__title">司法特考</h5>
+                    <div class="card-body hot__content">
+                        <h5 class="card-title font-weight-bold">三等司法官</h5>
+                        <p class="card-text">課程介紹課程介紹課程介紹課程介紹
+                            課程介紹課程介紹課程介紹課程介紹</p>
+                    </div>
+                </a>
+            </div>
+        </div> -->
+        <!-- 一般版本 結束 -->
+    </div>
+</section>
+<!-- 最新消息 -->
+<section class="video py-6 mb-6 mb-md-8" data-aos="zoom-in-up">
+    <div class="container">
+        <h2 class="cs-title my-3 my-md-6" data-style="1"><span data-title="最新消息 News"></span></h2>
+        <aside>
+            <ul class="filter__bar" id="filter-bar">
+                <li data-filter="all" class="active">全部新聞</li>
+                <li data-filter="kind1">大法官釋字</li>
+                <li data-filter="kind2">最高法院決議</li>
+                <li data-filter="kind3">最新修法</li>
+                <li data-filter="kind4">考試新訊</li>
+            </ul>
+        </aside>
+        <aside class="filter mb-5">
+            <ul class="filter__list" id="filter-list">
+                <li class="filter__item" data-filter-class="all, kind1">
+                    <a href="news_page.html">
+                        <span class="filter__item--new"></span>
+                        <span class="filter__item--date">20201030</span>
+                        <span class="filter__item--type">考試新訊</span>
+                        <h6 class="filter__item--title">【上架課程公告】</h6>
+                    </a>
+                </li>
+                <li class="filter__item" data-filter-class="all, kind2">
+                    <a href="news_page.html">
+                        <span class="filter__item--new"></span>
+                        <span class="filter__item--date">20201030</span>
+                        <span class="filter__item--type">考試新訊</span>
+                        <h6 class="filter__item--title">【上架課程公告】</h6>
+                    </a>
+                </li>
+                <li class="filter__item" data-filter-class="all, kind2">
+                    <a href="news_page.html">
+                        <span class=""></span>
+                        <span class="filter__item--date">20201030</span>
+                        <span class="filter__item--type">考試新訊</span>
+                        <h6 class="filter__item--title">【上架課程公告】</h6>
+                    </a>
+                </li>
+                <li class="filter__item" data-filter-class="all, kind2">
+                    <a href="news_page.html">
+                        <span class=""></span>
+                        <span class="filter__item--date">20201030</span>
+                        <span class="filter__item--type">考試新訊</span>
+                        <h6 class="filter__item--title">【上架課程公告】</h6>
+                    </a>
+                </li>
+                <li class="filter__item" data-filter-class="all, kind2">
+                    <a href="news_page.html">
+                        <span class=""></span>
+                        <span class="filter__item--date">20201030</span>
+                        <span class="filter__item--type">考試新訊</span>
+                        <h6 class="filter__item--title">【上架課程公告】</h6>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="d-flex justify-content-end">
+            <a href="news.html" class="text-dark">更多消息 More</a>
+        </div>
+    </div>
+</section>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-xl" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>        
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

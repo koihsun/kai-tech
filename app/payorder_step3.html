@@ -1,0 +1,181 @@
+---
+title: 確定結帳
+layout: ./app/layout.ejs
+engine: ejs
+current: payorder_step3
+---
+<div class="container mb-5 my-md-9">
+    <nav class="progress">
+        <div class="progress-bar finished" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><span>購物車</span></div>
+        <div class="progress-bar finished" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span>填寫訂購資料</span></div>
+        <div class="progress-bar active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>確定結帳</span></div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>進行付款</span></div>
+        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span>完成訂單</span></div>
+    </nav>
+</div>
+<section>
+    <div class="order container">
+        <div class="order__block__shadow px-3 py-3 px-md-9 py-md-6 mb-6 mb-md-11">
+            <h2 class="mb-3 mb-md-6">訂購明細</h2>
+            <ul class="order__box list-unstyled">
+                <li class="order__head">
+                    <div class="order__head-td">課程</div>
+                    <div class="order__head-td">總堂數</div>
+                    <div class="order__head-td">原價</div>
+                    <div class="order__head-td">特價</div>
+                </li>
+                <li class="order__content side__box">
+                    <div class="order__item">
+                        <div class="order__item-td"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i><span>2020司律全修A班證交法</span></div>
+                        <div class="order__item-td">30</div>
+                        <div class="order__item-td">52800</div>
+                        <div class="order__item-td">32800</div>
+                    </div>
+                    <div class="side__content">
+                        <div class="order__item__content">
+                            <div class="order__item__head">
+                                <div class="order__item__head-td">科目</div>
+                                <div class="order__item__head-td">名稱</div>
+                                <div class="order__item__head-td">師資</div>
+                            </div>
+                            <div class="order__item__item">
+                                <div class="order__item__item-td">民法概要</div>
+                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
+                                <div class="order__item__item-td">常陽</div>
+                            </div>
+                            <div class="order__item__item">
+                                <div class="order__item__item-td">民法概要</div>
+                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
+                                <div class="order__item__item-td">常陽</div>
+                            </div>
+                            <div class="order__item__item">
+                                <div class="order__item__item-td">民法概要</div>
+                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
+                                <div class="order__item__item-td">常陽</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="order__content side__box">
+                    <div class="order__item">
+                        <div class="order__item-td"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i><span>2020司律全修A班證交法</span></div>
+                        <div class="order__item-td">30</div>
+                        <div class="order__item-td">52800</div>
+                        <div class="order__item-td">32800</div>
+                    </div>
+                    <div class="side__content">
+                        <div class="order__item__content">
+                            <div class="order__item__head">
+                                <div class="order__item__head-td">科目</div>
+                                <div class="order__item__head-td">名稱</div>
+                                <div class="order__item__head-td">師資</div>
+                            </div>
+                            <div class="order__item__item">
+                                <div class="order__item__item-td">民法概要</div>
+                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
+                                <div class="order__item__item-td">常陽</div>
+                            </div>
+                            <div class="order__item__item">
+                                <div class="order__item__item-td">民法概要</div>
+                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
+                                <div class="order__item__item-td">常陽</div>
+                            </div>
+                            <div class="order__item__item">
+                                <div class="order__item__item-td">民法概要</div>
+                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
+                                <div class="order__item__item-td">常陽</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="order__row py-3 py-md-6">
+                <div class="order__form order__form--padding d-flex justify-content-between flex-wrap">
+                    <div class="form-check form-check-inline mb-3 mb-md-0">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">全館優惠：滿萬折百</label>
+                    </div>
+                    <div class="form-check form-check-inline discount-widget">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">折扣碼：</label>
+                        <input type="text" class="form-control" aria-label="Text input with radio button">
+                        <a href="" class="btn"><i class="fa fa-trash"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="order__row order__row--sum py-3 py-md-6">
+                <div class="order__form">
+                    <div class="order__form__inline mb-md-3">
+                        <div class="order__form--title">小計</div>
+                        <div class="order__form--content">65600 元</div>
+                    </div>
+                    <div class="order__form__inline">
+                        <div class="order__form--title">折扣</div>
+                        <div class="order__form--content">-100 元</div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__row order__row--sum pt-3 pt-md-6">
+                <div class="order__form">
+                    <div class="order__form__inline font-weight-bold">
+                        <div class="order__form--title">總金額</div>
+                        <div class="order__form--content">65500 元</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order__block__shadow px-3 py-3 px-md-9 py-md-6 mb-3 mb-md-6">
+            <div class="order__row order__row--detail mb-6">
+                <h2 class="mb-5">收件人資料</h2>
+                <div class="cartOrder mt-3 p-3">
+                    <div class="row">
+                        <div class="col-12 col-md-6 dl-horizontal">
+                            <dl>
+                                <dt>收件人姓名</dt>
+                                <dd><p>林麗莎</p></dd>
+                            </dl>
+                            <dl>
+                                <dt>收件人電話</dt>
+                                <dd><p>0910123123</p></dd>
+                            </dl>
+                            <dl>
+                                <dt>收件人地址</dt>
+                                <dd><p>100 臺北市中正區</p></dd>
+                            </dl>
+                            <dl>
+                                <dt>寄送注意事項</dt>
+                                <dd><p></p></dd>
+                            </dl>
+                            <!-- <dl>
+                                <dt>配送方式</dt>
+                                <dd><b >送貨到府</b><br>
+                                    <address id="home" >
+                                    <span>20000，新北市XX區XXX路X號X樓</span><br>
+                                    收件人：李鯉魚<br>
+                                    電話：09XX-XXX-XXX
+                                    </address>
+                                </dd>
+                            </dl> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order__row order__row--detail  mb-6">
+                <h2 class="mb-5">付款方式</h2>
+                <p class="pl-3 pl-md-8">信用卡 Credit Card</p>
+            </div>
+
+        </div>
+        <div class="order__block">
+            <div class="order__row order__row--btn py-3 py-md-6">
+                <div class="order__form__inline justify-content-between">
+                    <!-- 
+                    <button type="button" class="btn btn-outline-primary px-0">繼續購買</button>
+                    <button type="submit" class="btn btn-primary px-0">確認訂單</button> -->
+                    <a href="payorder_step2.html" class="btn btn-outline-primary px-0">返回</a>
+                    <a href="payorder_success.html" class="btn btn-primary px-0">確認付款</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

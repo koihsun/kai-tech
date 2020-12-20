@@ -1,0 +1,55 @@
+.footer {
+    text-align: center;
+    color: $white;
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+
+    a {
+        color: darken($white, 15%);
+        text-decoration: none;
+        white-space: nowrap;
+        &:hover {
+            color: lighten($white, 50%);
+        }
+    }
+    &__logo {
+        margin: 2rem 0;
+        @include media-breakpoint-up(md) {
+            margin: 0 124px 0 0;
+        }
+        img {
+            width: 140px;
+            @include media-breakpoint-up(md) {
+                width: 160px;
+            }
+        }
+    }
+    &__menu {
+        @include media-breakpoint-up(md) {
+            flex-basis: calc(100% - 284px);
+            justify-content: space-between;
+        }
+        &--block{
+            width: 100%;
+            @include media-breakpoint-up(md) {
+                width: auto;
+            }
+            &:nth-of-type(1) {
+                margin-bottom: 3.75rem;
+                @include media-breakpoint-up(lg) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &--item li {
+            padding-top: .25rem;
+            flex-basis: 25%;
+            text-align: left;
+        }
+    }
+    &__copyright {
+        color: $gray-400;
+        font-size: 0.875rem;
+    }
+}

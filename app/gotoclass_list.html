@@ -1,0 +1,69 @@
+---
+title: 開始上課列表
+layout: ./app/layout.ejs
+engine: ejs
+current: gotoclass_list
+---
+<div class="course-title mb-5" data-style="2">
+    <!-- 背景開始 -->
+    <div class="course-title__background">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- 背景結束 -->
+    <h1 class="course-title__content container position-relative font-weight-normal text-white">
+        <div class="row"><div class="offset-md-1">開始上課</div></div>
+    </h1>
+</div>
+<section class="gotoclass mb-md-8">
+    <div class="container">
+        <ul class="gotoclass_list list-unstyled">
+            <li class="mb-3">
+                <div class="media align-items-stretch p-3 p-md-5">
+                    <div class="media__img bg-outer" style="width: 30%;">
+                        <div class="bg-image" style="background-image: url(assets/images/img4@2x.png);"></div>
+                    </div>
+                    <div class="media-body px-md-5 d-flex flex-column justify-content-between">
+                        <h4 class="">2020司法全修A班證交法</h4>
+                        <div>
+                            <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="media-body__title">觀看期限</span><span>2020-10-05 至 2021-10-05</span></p>
+                            <p><i class="fa fa-book" aria-hidden="true"></i><span class="media-body__title">總堂數</span><span>30 堂</span></p>
+                        </div>
+                    </div>
+                    <div class="align-self-end"><a href="gotoclass_page.html" class="btn btn-primary">開始上課</a></div>
+                </div>
+            </li>
+            <li class="mb-3">
+                <div class="media align-items-stretch p-3 p-md-5">
+                    <div class="media__img bg-outer" style="width: 30%;">
+                        <div class="bg-image" style="background-image: url(assets/images/img4@2x.png);"></div>
+                    </div>
+                    <div class="media-body px-md-5 d-flex flex-column justify-content-between">
+                        <h4 class="">2020司法全修A班證交法</h4>
+                        <div>
+                            <p><i class="fa fa-calendar" aria-hidden="true"></i><span class="media-body__title">觀看期限</span><span>2020-10-05 至 2021-10-05</span></p>
+                            <p><i class="fa fa-book" aria-hidden="true"></i><span class="media-body__title">總堂數</span><span>30 堂</span></p>
+                        </div>
+                    </div>
+                    <div class="align-self-end"><a href="gotoclass_page.html" class="btn btn-primary">開始上課</a></div>
+                </div>
+            </li>
+        </ul>
+        <!-- 分頁 開始 -->
+        <nav aria-label="navigation" class="w-100 mt-5">
+            <ul class="pagination__custom pagination justify-content-end mb-8" id="pagination">
+                <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link current" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 分頁 結束 -->
+    </div>
+</section>

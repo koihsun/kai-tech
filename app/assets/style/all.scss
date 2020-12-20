@@ -1,0 +1,47 @@
+//bootstrap
+@import "./node_modules/bootstrap/scss/functions";
+@import "helpers/variables"; // 複製一份 variable 來覆蓋
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+//Font Awesome
+@import "font-awesome/font-awesome";
+
+//utilities
+@import "helpers/base";
+@import "helpers/utilities";
+
+//vendors
+@import "vendors/swiper-bundle";
+@import "vendors/aos";
+
+//components
+@import "components/header";
+@import "components/footer";
+@import "components/search";
+@import "components/title";
+@import "components/isotope";
+@import "components/gotop";
+@import "components/form";
+@import "components/bgimage";
+@import "components/breadcrumb";
+@import "components/card";
+@import "components/sidebar";
+@import "components/select";
+@import "components/video";
+@import "components/table";
+@import "components/pagination";
+@import "components/nav";
+
+//layout
+@import "layout/index";
+@import "layout/buycourse";
+
+
+@import "page/member";
+@import "page/course";
+@import "page/payorder";
+@import "page/gotoclass";
+@import "page/team";
+@import "page/booking";
+@import "page/news";
+@import "page/guide";

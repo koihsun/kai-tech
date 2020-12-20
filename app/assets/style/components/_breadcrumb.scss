@@ -1,0 +1,21 @@
+.cs-breadcrumb {
+    a {
+        text-decoration: none;
+        color: #2d2d2d;
+        &:hover {
+            color: $accent;
+            text-decoration: underline;
+        }
+    }
+
+    &::before {
+        content: "";
+        width: 24px;
+        padding-bottom: 24px;
+        margin-right: 1rem;
+        background-image: url(../../assets/images/icon/icon-kai.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}

@@ -1,0 +1,132 @@
+.cs-title[data-style="1"] {
+    position: relative;
+    text-align: center;
+
+    &::before, &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #000000;
+        top: 50%;
+        border-radius: 100%;
+        transform: translateY(-50%);
+    }
+    &::before {
+        left: 0;
+    }
+    &::after {
+        right: 0;
+    }
+    span {
+        display: inline-block;
+        background: $white;
+        padding: 0 15px;
+        font-weight: bold;
+        @include media-breakpoint-up(md) {
+            padding: 0 62px;
+        }
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #000000;
+        }
+        &::after{
+            content: attr(data-title);
+            background-color: inherit;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            padding: 0 1.5rem;
+            white-space: nowrap;
+            @include media-breakpoint-down(md) {
+                font-size: 1.5rem;
+                top: 4px;
+            }
+        }
+    }
+}
+
+.cs-title[data-style="2"] {
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    @include media-breakpoint-up(md) {
+        height: 100px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        transition: 0.4s all;
+        transform: skewX(30deg);
+        width: 60%;
+        top: 0;
+        right: -30px;
+        background: $secondary;
+        height: 50px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        transition: 0.4s all;
+        transform: skewX(30deg);
+        width: 60%;
+        top: 32px;
+        right: -30px;
+        background: $accent;
+        height: 28px;
+        z-index: 1;
+        @include media-breakpoint-up(md) {
+            top: 50px;
+            height: 50px;
+        }
+    }
+    
+    h2 {
+        &::before {
+            content: "";
+            position: absolute;
+            transition: 0.4s all;
+            height: 45px;
+            width: 60%;
+            top: 0;
+            left: -30px;
+            background: $primary;
+            border-bottom-right-radius: 5px;
+            transform: skewX(30deg);
+            z-index: 2;
+            @include media-breakpoint-up(md) {
+                height: 70px;
+            }
+        }
+
+        &::after {  
+            content: attr(data-title);
+            position: absolute;
+            width: 100%;
+            color: $white;
+            padding: 0 15vw;
+            border-bottom: 2px solid $white;
+            z-index: 3;
+            @include media-breakpoint-up(md) {
+                padding: 0 25vw;
+            }
+        }
+    }
+    .content {
+        line-height: 32px;
+        font-size: 1.25rem !important;
+        @include media-breakpoint-up(md) {
+            line-height: 50px;
+            font-size: 1.75rem !important;
+        }
+    }
+}

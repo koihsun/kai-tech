@@ -1,0 +1,71 @@
+//login.html
+.cs-form[data-style="1"] {
+    input[type="checkbox"] {
+        visibility: hidden;
+        width: 0;
+    }
+    input[type="checkbox"] + label {
+        cursor: pointer;
+    }
+    input[type="checkbox"] + label::before {
+        display: inline-block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 2px solid $accent;
+        transition: all 0.4s;
+        margin: 0 4px;
+    }
+    input[type="checkbox"]:checked + label::before {
+        border-top: 0;
+        border-left: 0;
+        width: 0.5rem;
+        height: 1rem;
+        transform: rotate(45deg);
+        margin: 0 10px;
+    }
+}
+//register.html
+.cs-form[data-style="2"] {
+    .necessary::before {
+        content: "*";
+        color: $red;
+    }
+
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] ~ label {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex: 1 0 auto;
+        cursor: pointer;
+    }
+    input[type=checkbox] ~ label::before {
+        content: "";
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $black;
+        border-radius: 100%;
+        vertical-align: middle;
+        margin-right: .5rem;
+    }
+    input[type=checkbox]:checked ~ label::before {
+        background-color: $black;
+    }
+    input[type=checkbox]:checked ~ label::after {
+        content: "";
+        position: absolute;
+        left: .5rem;
+        top: 0;
+        width: .5rem;
+        height: 1rem;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+}

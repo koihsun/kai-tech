@@ -1,0 +1,109 @@
+//外框弧度
+.border-radius-m {
+    border-radius: 10px;
+}
+.border-radius-l {
+    border-radius: 50px;
+}
+.border-shadow {
+    box-shadow: 0 5px 20px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+}
+//按鈕顏色
+.btn-hover-primary {
+    background-color: $accent;
+    border-color: $accent;
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+    }
+}
+//按鈕顏色
+.btn-hover-accent {
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+        background-color: $accent;
+        border-color: $accent;
+    }
+}
+.btn-hover-shadow {
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.btn-hover-focus {
+    transform: scale(1);
+    transition: transform .6s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+//連結顏色
+.link-hover-accent {
+    color: $accent;
+    &:hover {
+        color: $primary;
+    }
+}
+//訊息提示
+.icon-num {
+    align-items: center;
+    background-color: rgb(231, 86, 65);
+    border-radius: 9999px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    transform: translate(50%, -50%);
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+}
+//首頁文宣特效
+.h-transition {
+    transition: transform 500ms ease, background 500ms ease;
+}
+//圖片
+.bg-outer {
+    width: 100%;
+    //height: 100%;
+    //z-index: -20;
+    position: relative;
+    overflow: hidden;
+}
+.bg-image {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+//card 陰影/hover效果
+.card-shadow {
+    overflow: hidden;
+    border-radius: 1.25rem;
+    box-shadow: 0 2px 10px 0 rgba(93, 93, 93, 0.5) !important;
+}
+.card-hover-move {
+    transform: translateY(0);
+    transition: transform .6s;
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+.card-hover-focus {
+    .bg-image {
+        transform: scale(1);
+        transition: transform .6s;
+    }
+    &:hover .bg-image {
+        transform: scale(1.2);
+    }
+}
+.card-hover-border {
+    transition: box-shadow .6s;
+    &:hover {
+        box-shadow: 0 2px 10px 0 lighten($primary, 10%) !important;
+    }
+}

@@ -1,0 +1,44 @@
+.cs-select[data-style="1"] {
+    .select__btn, .select__option {
+        cursor: pointer;
+        transition: .3s;
+        background-color: $white;
+        color: #595959;
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            width: 66%;
+            margin: 0;
+            padding: 1rem 2rem;
+            border: none;
+        }
+    }
+    .select__btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+    .dropdown-menu{
+        top: 100% !important;
+        transform: translate3d(0, 0, 0) !important;
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+        @include media-breakpoint-up(md) {
+            width: 66%;
+        }
+        .select__option {
+            border-bottom: solid 0.5px lighten(#bebebe, 10%);
+            cursor: pointer;
+            width: 100%;
+            &.active {
+                background: $secondary;
+                color: $black;
+            }
+            &:hover {
+                background: #efefef;
+            }
+        }
+    }
+}

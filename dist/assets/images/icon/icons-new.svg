@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="24" viewBox="0 0 45 24">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <path fill="#CA1414" d="M0 0H44V24H0z" transform="translate(-19 -179) translate(0 159) translate(19.5 20)"/>
+                    <text fill="#FFF" font-family="PingFangTC-Semibold, PingFang TC" font-size="14" font-weight="500" transform="translate(-19 -179) translate(0 159) translate(19.5 20)">
+                        <tspan x="5.5" y="16">NEW</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

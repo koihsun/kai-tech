@@ -1,0 +1,385 @@
+//進度條
+.progress {
+    height: 40px;
+    background-color: transparent;
+    border-radius: 0;
+    @include media-breakpoint-up(md) {
+        height: 80px;
+    }
+}
+.progress-bar{
+    position: relative;
+    overflow: visible;
+    background-color: #dddddd;
+    border-color: #dddddd;
+    color: #595959;
+    width: calc((100% - 10px)/5);
+
+    @include media-breakpoint-up(md) {
+        width: calc((100% - 50px)/5);
+        font-size: 1.25rem;
+        margin-right: 0;
+    }
+    &.active, &.finished {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white;
+    }
+    span {
+        position: relative;
+        border-color: inherit;
+        margin-left: 10px;
+        font-size: .75rem;
+        @include media-breakpoint-up(md) {
+            margin-left: 50px;
+            font-size: 1rem;
+        }
+    }
+
+    &::after, span::after {
+        content: '';
+        position: absolute;
+        left: 100%;
+        height: 0;
+        width: 0;
+        border: 24px solid transparent;
+        border-left-width: 10px;
+        border-right-width: 0;
+        @include media-breakpoint-up(md) {
+            content: '';
+            border: 40px solid transparent;
+            border-left-width: 50px;
+        }
+    }
+    &::after {
+        z-index: 1;
+        border-left-color: $white;
+        border-width: 24px;
+        border-left-width: 12px;
+        @include media-breakpoint-up(md) {
+            border-width: 48px;
+            border-left-width: 58px;
+        }
+    }
+    span::after {
+        z-index: 2;
+        border-left-color: inherit;
+        transform: translateY(-50%);
+    }
+}
+
+//表格標題/內文
+.order {
+    &__head, &__item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            font-size: 1.25rem;
+            flex-wrap: nowrap;
+        }
+        &-td {
+            padding: 0 10px;
+            @include media-breakpoint-up(md) {
+                padding: 0;
+            }
+            &:nth-child(1) {
+                width: calc((100% - 30px) * .50);
+                @include media-breakpoint-up(md) {
+                    width: calc((100% - 100px) * .50);
+                }
+            }
+            &:nth-child(2){
+                width: calc((100% - 30px) * .20);
+                @include media-breakpoint-up(md) {
+                    width: calc((100% - 100px) * .20);
+                }
+            }
+            &:nth-child(3), &:nth-child(4) {
+                width: calc((100% - 30px) * .20);
+                @include media-breakpoint-up(md) {
+                    width: calc((100% - 100px) * .15);
+                }
+            }
+            &:nth-child(5) {
+                width: 30px;
+                @include media-breakpoint-up(md) {
+                    width: 80px;
+                }
+            }
+        }
+    }
+    &__head {
+        color: $white;
+        background-color: $accent;
+        @include media-breakpoint-up(md) {
+            padding: 10px 30px;
+        }
+    }
+    &__item {
+        padding: .5rem 0;
+        border-bottom: 1px solid #95b9bd;
+        @include media-breakpoint-up(md) {
+            padding: .25rem 1.875rem;
+        }
+        
+    }
+    .icon-icon_arrow {
+        transform: rotate(-90deg);
+    }
+
+    .icon-icon_trash {
+        color: $red;
+        padding: 0;
+        @include media-breakpoint-up(md) {
+            font-size: 1.75rem;
+        }
+    }
+}
+//表格內文下展內容
+.order__item {
+    &__content {
+        padding: 1rem 1.875rem;
+        border-bottom: 1px solid #95b9bd;
+    }
+    &__head {
+        font-weight: bold;
+        @include media-breakpoint-up(md) {
+            font-size: 1.25rem;
+        }
+    }
+    &__head, &__item{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        padding: .5rem 0;
+        &-td {
+            &:nth-child(1) {
+                width: calc((100% - 40px) * .40);
+                @include media-breakpoint-up(md) {
+                    width: calc((100% - 40px) * .20);
+                }
+            }
+            &:nth-child(2){
+                width: calc((100% - 40px) * .60);
+                padding: 0 10px;
+                @include media-breakpoint-up(md) {
+                    width: calc((100% - 40px) * .80);
+                }
+            }
+            &:nth-last-child(1) {
+                width: 40px;
+                @include media-breakpoint-up(md) {
+                    width: 96px;
+                }
+            }
+        }
+    }
+    .btn {
+        padding: 0;
+        @include media-breakpoint-up(md) {
+            padding: 0.7rem 0.75rem;
+        }
+    }
+}
+//row
+.order__row {
+    &:not(:nth-last-of-type(1))  {
+        border-bottom: solid 1px #95b9bd;
+    }
+    &--sum {
+        @include media-breakpoint-up(md) {
+            font-size: 1.5rem;
+        }
+        > div {
+            width: 60%;
+            margin-left: auto;
+            @include media-breakpoint-up(lg) {
+                width: 40%;
+            }
+        }
+    }
+    &--btn {
+        .btn {
+            width: calc(50% - 24px);
+            border-radius: 0;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+            @include media-breakpoint-up(md) {
+                padding-top: 1.25rem;
+                padding-bottom: 1.25rem;
+            }
+        }
+        > div {
+            width: 100%;
+            margin-left: auto;
+            @include media-breakpoint-up(md) {
+                width: 50%;
+            }
+        }
+    }
+}
+//表格
+.order__form {
+    input {
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        background-color: #ecf1f1;
+        @include media-breakpoint-up(md) {
+            width: 324px;
+        }
+    }
+    .discount-widget .btn {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        height: 40px;
+        padding: 0;
+        font-size: 25px;
+        color: $red;
+        background: none;
+        border-radius: 0;
+        border: none;
+        transition: .3s;
+        &:hover {
+            color: $accent;
+        }
+    }
+    &__inline {
+        display: flex;
+    }
+    &--title {
+        width: 50px;
+        flex: 1 0 50px;
+        @include media-breakpoint-up(md) {
+            width: 150px;
+            flex: 1 0 150px;
+        }
+    }
+    &--content {
+        width: calc(100% - 50px);
+        flex: 1 0 auto;
+        text-align: right;
+        @include media-breakpoint-up(md) {
+            width: calc(100% - 150px);
+        }
+    }
+}
+//填寫訂購資料頁
+.order__block__shadow {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    .order__item {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .order__head-td, .order__item-td {
+        &:nth-child(1) {
+            width: calc(55% - 70px);
+        }
+        &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+            width: 15%;
+            margin: 10px;
+        }
+    }
+}
+.order__form--padding {
+    padding: .25rem 1.875rem;
+}
+.order__row--detail {
+    @include media-breakpoint-up(md) {
+        font-size: 1.25rem;
+    }
+}
+
+.cartOrder {
+    dd,dt {
+        line-height: 1.42857;
+    }
+    dd {
+        margin-left:0;
+    }
+    .dl-horizontal dd:after,.dl-horizontal dd:before {
+        content: " ";
+        display:table;
+    }
+    .dl-horizontal dd:after{
+        clear:both;
+    }
+    .dl-horizontal dt{
+        float: left;
+        clear: left;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 500;
+        @include media-breakpoint-up(md) {
+            width: 140px;
+            font-size: 1.25rem;
+        }
+    }
+    .dl-horizontal dd {
+        margin-left: 100px;
+        @include media-breakpoint-up(md) {
+            margin-left: 180px;
+            font-size: 1.25rem;
+        }
+    }
+}
+.order {
+    input, textarea {
+        border-radius: 5px;
+        border: 1px solid #95b9bd;
+    }
+    .form-group {
+        margin-bottom: .5rem;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 2rem;
+        }
+    }
+    label {
+        @include media-breakpoint-up(md) {
+            text-align: right;
+        }
+    }
+}
+
+.order__pay {
+    position: relative;
+    width: 100%;
+    padding-bottom: 44%;
+    >div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-right: 1rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        padding-left: 50px;
+        @include media-breakpoint-up(sm) {
+            font-size: 3rem;
+            padding-left: 100px;
+        }
+        @include media-breakpoint-up(lg) {
+            font-size: 90px;
+            padding-left: 180px;
+        }
+    }
+    &.success > div {
+        color: $primary;
+        background-image: url(../../assets/images/payorder_success.png);
+    }
+    &.fail > div {
+        color: #595959;
+        background-image: url(../../assets/images/payorder_fail.png);
+    }
+}
