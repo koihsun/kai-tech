@@ -15931,6 +15931,68 @@ button.swiper-pagination-bullet {
       width: 40px;
       text-align: center; }
 
+.gotoclass .side__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  border-bottom: solid 1px #95b9bd;
+  cursor: pointer; }
+  @media (min-width: 768px) {
+    .gotoclass .side__title {
+      font-size: 1.25rem; } }
+
+.gotoclass .side__content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: max-height;
+  -o-transition: max-height;
+  transition: max-height;
+  -webkit-transition-duration: .3s;
+       -o-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+       -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 0; }
+  .gotoclass .side__content > li {
+    margin-bottom: 1rem; }
+  .gotoclass .side__content > li:nth-of-type(1) {
+    margin-top: 1.25rem; }
+  .gotoclass .side__content > li:nth-last-of-type(1) {
+    margin-bottom: 2rem; }
+  .gotoclass .side__content a {
+    color: #2d2d2d; }
+    .gotoclass .side__content a:hover {
+      color: #4e6f9b; }
+
+.gotoclass .side__box .icon-icon_arrow {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.gotoclass .side__box.active .side__content {
+  max-height: 1000px;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s; }
+
+.gotoclass .side__box.active .icon-icon_arrow {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0); }
+
 .booking-title {
   font-size: 1.5rem;
   font-weight: bold; }
