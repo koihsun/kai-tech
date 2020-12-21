@@ -45,24 +45,64 @@
             font-size: 1.25rem;
         }
     }
+
     .table__head, .table__item{
         display: flex;
+        flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        align-content: center;
         width: 100%;
-        padding: .5rem 0;
-        border-bottom: 1px solid #95b9bd;
+        border: 1px solid #95b9bd;
+        margin-bottom: 1rem;
+        padding: 1rem;
         @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            margin-bottom: 0;
             padding: 1rem 0;
         }
         &-td {
-            &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5) {
+            @include media-breakpoint-up(md) {
                 width: 20%;
-                @include media-breakpoint-up(md) {
-                    width: 20%;
+            }
+        }
+        &--btn {
+            text-align: center;
+            .btn {
+                width: auto;
+                @include media-breakpoint-down(sm) {
+                    width: 100%;
+                    border-radius: 0;
+                    margin-top: 1rem;
                 }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .table__item {
+            &--serial::before {
+                content: "訂單編號";
+                margin-right: 1rem;
+            }
+            &--process::before {
+                content: "處理進度";
+                margin-right: 1rem;
+            }
+            &--method::before {
+                content: "付款方式";
+                margin-right: 1rem;
+            }
+            &--count::before {
+                content: "訂單金額";
+                margin-right: 1rem;
+            }
+            &--date::before {
+                content: "購買時間";
+                margin-right: 1rem;
             }
         }
     }

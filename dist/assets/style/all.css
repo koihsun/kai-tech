@@ -14510,27 +14510,64 @@ button.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   width: 100%;
-  padding: .5rem 0;
-  border-bottom: 1px solid #95b9bd; }
+  border: 1px solid #95b9bd;
+  margin-bottom: 1rem;
+  padding: 1rem; }
   @media (min-width: 768px) {
     .cs-table[data-style="3"] .table__head, .cs-table[data-style="3"] .table__item {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      margin-bottom: 0;
       padding: 1rem 0; } }
-  .cs-table[data-style="3"] .table__head-td:nth-child(1), .cs-table[data-style="3"] .table__head-td:nth-child(2), .cs-table[data-style="3"] .table__head-td:nth-child(3), .cs-table[data-style="3"] .table__head-td:nth-child(4), .cs-table[data-style="3"] .table__head-td:nth-child(5), .cs-table[data-style="3"] .table__item-td:nth-child(1), .cs-table[data-style="3"] .table__item-td:nth-child(2), .cs-table[data-style="3"] .table__item-td:nth-child(3), .cs-table[data-style="3"] .table__item-td:nth-child(4), .cs-table[data-style="3"] .table__item-td:nth-child(5) {
-    width: 20%; }
-    @media (min-width: 768px) {
-      .cs-table[data-style="3"] .table__head-td:nth-child(1), .cs-table[data-style="3"] .table__head-td:nth-child(2), .cs-table[data-style="3"] .table__head-td:nth-child(3), .cs-table[data-style="3"] .table__head-td:nth-child(4), .cs-table[data-style="3"] .table__head-td:nth-child(5), .cs-table[data-style="3"] .table__item-td:nth-child(1), .cs-table[data-style="3"] .table__item-td:nth-child(2), .cs-table[data-style="3"] .table__item-td:nth-child(3), .cs-table[data-style="3"] .table__item-td:nth-child(4), .cs-table[data-style="3"] .table__item-td:nth-child(5) {
-        width: 20%; } }
+  @media (min-width: 768px) {
+    .cs-table[data-style="3"] .table__head-td, .cs-table[data-style="3"] .table__item-td {
+      width: 20%; } }
+  .cs-table[data-style="3"] .table__head--btn, .cs-table[data-style="3"] .table__item--btn {
+    text-align: center; }
+    .cs-table[data-style="3"] .table__head--btn .btn, .cs-table[data-style="3"] .table__item--btn .btn {
+      width: auto; }
+      @media (max-width: 767.98px) {
+        .cs-table[data-style="3"] .table__head--btn .btn, .cs-table[data-style="3"] .table__item--btn .btn {
+          width: 100%;
+          border-radius: 0;
+          margin-top: 1rem; } }
+
+@media (max-width: 767.98px) {
+  .cs-table[data-style="3"] .table__item--serial::before {
+    content: "訂單編號";
+    margin-right: 1rem; }
+  .cs-table[data-style="3"] .table__item--process::before {
+    content: "處理進度";
+    margin-right: 1rem; }
+  .cs-table[data-style="3"] .table__item--method::before {
+    content: "付款方式";
+    margin-right: 1rem; }
+  .cs-table[data-style="3"] .table__item--count::before {
+    content: "訂單金額";
+    margin-right: 1rem; }
+  .cs-table[data-style="3"] .table__item--date::before {
+    content: "購買時間";
+    margin-right: 1rem; } }
 
 .cs-pagination .page-link {
   text-shadow: 0 1px 1px #FFF;
