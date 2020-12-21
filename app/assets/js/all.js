@@ -177,3 +177,10 @@ function videoStop($wrapper) {
     // remove youtube link, stopping the video from playing in the background
     $iframe.attr('src','');
 }
+
+
+$('.question__item').click(function(){
+
+    $(this).children('.question__answer').slideToggle()
+    $(this).toggleClass('show');
+});

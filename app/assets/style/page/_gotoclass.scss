@@ -19,11 +19,14 @@
 }
 .gotoclass {
     .video-title {
-        font-size: 2rem;
+        font-size: 1.25rem;
         background-color: $accent;
         color: #fff;
         text-align: center;
         padding: 1rem 0;
+        @include media-breakpoint-up(md) {
+            font-size: 2rem;
+        }
     }
     .classlist {
         background-color: $secondary;
@@ -148,8 +151,7 @@
                     }
                 }
                 &:nth-child(2){
-                    width: calc((100% - 40px) * .20);
-                    padding: 0 10px;
+                    width: 100%;
                     @include media-breakpoint-up(md) {
                         width: calc((100% - 40px) * .20);
                     }

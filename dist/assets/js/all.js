@@ -177,4 +177,9 @@ function videoStop($wrapper) {
 
   $iframe.attr('src', '');
 }
+
+$('.question__item').click(function () {
+  $(this).children('.question__answer').slideToggle();
+  $(this).toggleClass('show');
+});
 //# sourceMappingURL=all.js.map

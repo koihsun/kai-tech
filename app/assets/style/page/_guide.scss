@@ -44,6 +44,9 @@
             position: absolute;
             left: 2rem;
             color: $primary;
+            @include media-breakpoint-down(sm) {
+                left: 1rem;
+            }
         }
     }
 
@@ -56,8 +59,8 @@
         >div {
             padding: 1rem;
             padding-right: 0.5rem;
-            @include media-breakpoint-up(sm) {
-                padding-left: 1.5rem;
+            @include media-breakpoint-down(sm) {
+                padding-left: 2rem;
                 padding-right: 1.5rem;
             }
             @include media-breakpoint-up(md) {
@@ -75,6 +78,20 @@
                 &::before {
                     content: "\f068";
                 }
+            }
+        }
+    }
+}
+.contact {
+    .row > div {
+        @include media-breakpoint-down(sm) {
+            &:nth-of-type(1) {
+                order: 1;
+                margin-bottom: 3rem;
+            }
+            &:nth-of-type(2) {
+                order: 0;
+                margin-bottom: 2rem;
             }
         }
     }
