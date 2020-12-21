@@ -280,3 +280,160 @@
     }
     
 }
+
+.filter2{
+    height: 100%;
+    &__bar {
+        position: relative;
+        white-space: nowrap;
+        list-style: none;
+        text-align: center;
+        font-size: .75rem;
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        .filter__all {
+            cursor: pointer;
+            transition: .3s;
+            background-color: #efefef;
+            color: #595959;
+            border-radius: 50px;
+            padding: 0.7rem 0.75rem;
+            margin-bottom: 1rem;
+
+            @include media-breakpoint-up(md) {
+                width: 20%;
+                margin: 0;
+                padding:  1.25rem 0;
+                border-radius: 0;
+            }
+            &.active, &:hover {
+                background: #0094a4;
+                color: $white;
+            }
+        }
+
+        .filter__select, .filter__type {
+            cursor: pointer;
+            transition: .3s;
+            background-color: #f6f6f6;
+            color: #595959;
+            width: 100%;
+            @include media-breakpoint-up(md) {
+                width: 400px;
+                margin: 0;
+                padding: 1rem 2rem;
+                border-radius: 0;
+                border: none;
+            }
+        }
+        .dropdown-menu{
+            top: 100% !important;
+            transform: translate3d(0, 0, 0) !important;
+            border-radius: 0;
+            width: 100%;
+            padding: 0;
+            width: 100%;
+            @include media-breakpoint-up(md) {
+                width: 400px;
+            }
+            .filter__type {
+                border-bottom: solid 0.5px lighten(#bebebe, 10%);
+                cursor: pointer;
+                &.active {
+                    background: #0094a4;
+                    color: $white;
+                }
+                &:hover {
+                    background: #efefef;
+                }
+            }
+        }
+    }
+    &__item {
+        list-style: none;
+        width: 100%;
+        transition: .3s;
+        box-shadow: 0 2px 4px 0 rgba(93, 93, 93, 0.4);
+        border-bottom: solid 0.5px #d5d5d5;
+        margin-bottom: 1rem;
+
+        @include media-breakpoint-up(md) {
+            box-shadow: none;
+            margin-bottom: 0;
+            border-right: 0;;
+            border-left: 0;;
+        }
+
+        &:hover {
+            background-color: #fafafa;
+        }
+        > a {
+            display: flex;
+            text-decoration: none;
+            flex-wrap: wrap;
+            padding: 1.25rem 0;
+            color: #000000;
+        }
+
+        > a span:nth-of-type(1){
+            width: 70px;
+            flex-basis: 70px;
+            @include media-breakpoint-up(md) {
+                width: 96px;
+                flex-basis: 96px;
+            }
+        }
+
+        &--new {
+            width: 70px;
+            flex-basis: 70px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: center;
+            background-position-y: center;
+            background-image: url(../../assets/images/icon/icons-new.svg);
+
+            order: -1;
+        }
+        &--date {
+            width: 20px;
+            flex-basis: 20px;
+            order: 2;
+            text-align: right;
+            @include media-breakpoint-up(md) {
+                width: 150px;
+                flex-basis: 150px;
+                order: 1;
+                text-align: left;
+            }
+        }
+        &--type {
+            width: 120px;
+            flex-basis: 120px;
+            order: 1;
+            @include media-breakpoint-up(md) {
+                width: 150px;
+                flex-basis: 150px;
+                order: 2;
+            }
+        }
+        &--title {
+            flex:  1 0 100%;
+            order: 3;
+            padding: 10px 20px 0;
+            @include media-breakpoint-up(md) {
+                flex-basis: 0;
+                order: 3;
+                padding: 0;
+            }
+        }
+    }
+}

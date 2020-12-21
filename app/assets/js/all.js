@@ -3,7 +3,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         s = $(document).scrollTop(); 
         /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
-        if(s >150){
+        if(s >0){
             $('#header').addClass('mini-nav');
             $('#gotop').fadeIn();
         } else {
