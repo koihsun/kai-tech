@@ -1,0 +1,25 @@
+#memberMsg {
+    .close {
+        position: absolute;
+        color: #000;
+        margin: 0;
+        text-align: right;
+        right: 0;
+        top: -6px;
+        span {
+            font-size: 2rem;
+        }
+    }
+    .modal-header {
+        background-color: #efefef;
+        padding: 1.5rem 1rem;
+    }
+    .modal-body {
+        background-color: #f6f6f6;
+    }
+    .modal-dialog {
+        @include media-breakpoint-up(md) {
+            max-width: 800px;
+        }
+    }
+}

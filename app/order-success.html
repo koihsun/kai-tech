@@ -1,8 +1,8 @@
 ---
-title: 結帳失敗
+title: 結帳成功
 layout: ./app/layout.ejs
 engine: ejs
-current: payorder_fail
+current: order-success
 ---
 <div class="container mb-5 my-md-9">
     <nav class="progress">
@@ -15,16 +15,17 @@ current: payorder_fail
 </div>
 <section>
     <div class="order container">
-        <div class="order__block order__pay fail">
-            <div class="order__bg">訂購失敗</div>
+        <div class="order__block order__pay success">
+            <div class="order__bg">完成訂購！</div>
         </div>
         <div class="order__block">
             <div class="order__row order__row--btn py-3 py-md-6">
-                <div class="order__form__inline justify-content-end">
+                <div class="order__form__inline justify-content-between">
                     <!-- 
                     <button type="button" class="btn btn-outline-primary px-0">繼續購買</button>
                     <button type="submit" class="btn btn-primary px-0">確認訂單</button> -->
-                    <a href="payorder_step3.html" class="btn btn-primary px-0">返回</a>
+                    <a href="mrmber_centre.html" class="btn btn-primary px-0">會員中心</a>
+                    <a href="index.html" class="btn btn-primary px-0">回首頁</a>
                 </div>
             </div>
         </div>

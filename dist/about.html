@@ -27,7 +27,7 @@
                 </div>
                 <!-- 購物車 -->
                 <div class="d-md-none mr-7">
-                    <a href="payorder_step1.html" class="position-relative d-block link-hover-accent">
+                    <a href="order-step1.html" class="position-relative d-block link-hover-accent">
                         <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                         <span class="icon-num">2</span>
                     </a>
@@ -66,15 +66,15 @@
                         </li>
                         <!-- 會員 (手機板 ) -->
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5 message" href="member_message.html">會員訊息
+                            <a class="nav-link py-3 px-md-0 py-md-5 message" href="member-message.html">會員訊息
                                 <span class="icon-num">2</span>
                             </a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5" href="order.html">查詢訂單</a>
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="member-order.html">查詢訂單</a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5" href="member_modify.html">修改資料</a>
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="member-modify.html">修改資料</a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
                             <a class="nav-link py-3 px-md-0 py-md-5" href="login.html">登出</a>
@@ -92,7 +92,7 @@
                     <div class="d-none d-md-flex align-items-center">
                         <!-- 購物車 按鈕 -->
                         <div class="mr-md-7">
-                            <a href="payorder_step1.html" class="position-relative d-block link-hover-accent">
+                            <a href="order-step1.html" class="position-relative d-block link-hover-accent">
                                 <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                                 <span class="icon-num">2</span>
                             </a>
@@ -105,15 +105,15 @@
                             </a>
                             <ul class="dropdown-menu text-center mt-0" aria-labelledby="navbarDropdown2">
                                 <li class="dropdown">
-                                    <a class="dropdown-item message" href="member_message.html">會員訊息<span class="icon-num">2</span></a>
+                                    <a class="dropdown-item message" href="member-message.html">會員訊息<span class="icon-num">2</span></a>
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="dropdown">
-                                    <a class="dropdown-item" href="order.html">查詢訂單</a>
+                                    <a class="dropdown-item" href="member-order.html">查詢訂單</a>
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="dropdown">
-                                    <a class="dropdown-item" href="member_modify.html">修改資料</a>
+                                    <a class="dropdown-item" href="member-modify.html">修改資料</a>
                                     <!-- 選單內容列表 第二層 沒用到，但先保留以後可以用-->
                                     <!-- <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdown">
                                         <li class="dropdown">
@@ -155,26 +155,19 @@
 </header>
 
     <main class="mb-auto">
-        <div class="course-title">
-    <!-- 背景開始 -->
-    <div class="course-title__background">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <!-- 背景結束 -->
-    <h1 class="course-title__content container position-relative font-weight-normal text-white">
-        <div class="row"><div class="offset-md-1">新手指南</div></div>
-    </h1>
-</div>
-<!-- 麵包屑 開始 -->
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb container bg-white align-items-center breadcrumb__custom">
-        <li class="breadcrumb-item"><a href="guide.html">新手指南</a></li>
-        <li class="breadcrumb-item active"><a href="#">關於我們</a></li>
-    </ol>
-</nav>
-<!-- 麵包屑 結束 -->
+        <!-- 標題 -->
+<article class="cs-title mb-4" data-style="2">
+    <h2 class="content" data-title="新手指南"></h2>
+</article>
+<!-- 麵包屑 -->
+<section class="container my-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
+            <li class="breadcrumb-item"><a href="guide.html">新手指南</a></li>
+            <li class="breadcrumb-item active"><a href="#">關於我們</a></li>
+        </ol>
+    </nav>
+</section>
 <section class="booking booking-info">
     <div class="container">
         <div class="row mb-5 mb-md-10">

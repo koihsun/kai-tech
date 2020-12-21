@@ -1,0 +1,140 @@
+---
+title: 訂單資訊
+layout: ./app/layout.ejs
+engine: ejs
+current: member-order-info
+---
+<!-- 標題 -->
+<article class="cs-title mb-4" data-style="2">
+    <h2 class="content" data-title="訂單查詢"></h2>
+</article>
+<!-- 麵包屑 -->
+<section class="container my-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
+            <li class="breadcrumb-item"><a href="#">會員中心</a></li>
+            <li class="breadcrumb-item"><a href="member-order.html">訂單查詢</a></li>
+            <li class="breadcrumb-item active"><a href="member-order-info.html">KT2011168774038112</a></li>
+        </ol>
+    </nav>
+</section>
+<!-- 主要內容 -->
+<section class="member cs-table mb-md-8" data-style="1">
+    <div class="container">
+        <!-- 訂單資訊 -->
+        <div class="border-shadow mb-6">
+            <h2 class="table__title">訂單資訊</h2>
+            <div class="table__body">
+                <div class="row border-bottom mb-3">
+                    <div class="dl-horizontal col-12 col-md-6">
+                        <dl>
+                            <dt>訂單編號</dt>
+                            <dd><p>KT2011168774038112</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>銷售金額</dt>
+                            <dd><p>31,800</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>付款金額</dt>
+                            <dd><p class="text-red">31,000</p></dd>
+                        </dl>
+                    </div>
+                    <div class="dl-horizontal col-12 col-md-6">
+                        <dl>
+                            <dt>訂單狀態</dt>
+                            <dd><p>完成付款</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>訂單成立時間</dt>
+                            <dd><p>2020-11-04 10:09:30</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>活動折扣</dt>
+                            <dd><p>800</p></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 dl-horizontal">
+                        <dl>
+                            <dt>付款方式</dt>
+                            <dd><p>ATM付款</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>銀行代碼</dt>
+                            <dd><p>080</p></dd>
+                        </dl>
+                    </div>
+                    <div class="col-12 col-md-6 dl-horizontal">
+                        <dl>
+                            <dt>付款時間</dt>
+                            <dd><p>2020-10-14 11:10:20</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>銀行帳號</dt>
+                            <dd><p>321849503543</p></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 收件人資訊 -->
+        <div class="border-shadow mb-6">
+            <h2 class="table__title">訂單資訊</h2>
+            <div class="table__body">
+                <div class="row">
+                    <div class="col-12 col-md-6 dl-horizontal">
+                        <dl>
+                            <dt>收件人姓名</dt>
+                            <dd><p>林麗莎</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>收件人電話</dt>
+                            <dd><p>0910123123</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>收件人地址</dt>
+                            <dd><p>100 臺北市中正區</p></dd>
+                        </dl>
+                        <dl>
+                            <dt>寄送注意事項</dt>
+                            <dd><p>警衛室收件</p></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 訂單課程資訊 -->
+        <div class="border-shadow mb-6">
+            <h2 class="table__title">訂單資訊</h2>
+            <div class="table__body">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="cs-table mb-6" data-style="4">
+                            <li class="table__head d-none d-md-flex">
+                                <div class="table__head-td">課程套裝名稱</div>
+                                <div class="table__head-td">商品價格</div>
+                                <div class="table__head-td">影片觀看起始日期</div>
+                                <div class="table__head-td">影片觀看結束日期</div>
+                            </li>
+                            <li class="table__item">
+                                <div class="table__item-td table__item--course">三等書記官</div>
+                                <div class="table__item-td table__item--sum">10,000</div>
+                                <div class="table__item-td table__item--start">2020-12-01</div>
+                                <div class="table__item-td table__item--end"><span class="text-danger">2021-08-01</span></div>
+                            </li>
+                            <li class="table__item">
+                                <div class="table__item-td table__item--course">2020司法三等全修班-
+                                    法院組織法 (全書)</div>
+                                <div class="table__item-td table__item--sum">10,000</div>
+                                <div class="table__item-td table__item--start">2020-12-01</div>
+                                <div class="table__item-td table__item--end"><span class="text-danger">2021-08-01</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

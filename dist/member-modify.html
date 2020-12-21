@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>結帳失敗</title>
+    <title>資料修改</title>
     <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -27,7 +27,7 @@
                 </div>
                 <!-- 購物車 -->
                 <div class="d-md-none mr-7">
-                    <a href="payorder_step1.html" class="position-relative d-block link-hover-accent">
+                    <a href="order-step1.html" class="position-relative d-block link-hover-accent">
                         <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                         <span class="icon-num">2</span>
                     </a>
@@ -66,15 +66,15 @@
                         </li>
                         <!-- 會員 (手機板 ) -->
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5 message" href="member_message.html">會員訊息
+                            <a class="nav-link py-3 px-md-0 py-md-5 message" href="member-message.html">會員訊息
                                 <span class="icon-num">2</span>
                             </a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5" href="order.html">查詢訂單</a>
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="member-order.html">查詢訂單</a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5" href="member_modify.html">修改資料</a>
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="member-modify.html">修改資料</a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
                             <a class="nav-link py-3 px-md-0 py-md-5" href="login.html">登出</a>
@@ -92,7 +92,7 @@
                     <div class="d-none d-md-flex align-items-center">
                         <!-- 購物車 按鈕 -->
                         <div class="mr-md-7">
-                            <a href="payorder_step1.html" class="position-relative d-block link-hover-accent">
+                            <a href="order-step1.html" class="position-relative d-block link-hover-accent">
                                 <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                                 <span class="icon-num">2</span>
                             </a>
@@ -105,15 +105,15 @@
                             </a>
                             <ul class="dropdown-menu text-center mt-0" aria-labelledby="navbarDropdown2">
                                 <li class="dropdown">
-                                    <a class="dropdown-item message" href="member_message.html">會員訊息<span class="icon-num">2</span></a>
+                                    <a class="dropdown-item message" href="member-message.html">會員訊息<span class="icon-num">2</span></a>
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="dropdown">
-                                    <a class="dropdown-item" href="order.html">查詢訂單</a>
+                                    <a class="dropdown-item" href="member-order.html">查詢訂單</a>
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="dropdown">
-                                    <a class="dropdown-item" href="member_modify.html">修改資料</a>
+                                    <a class="dropdown-item" href="member-modify.html">修改資料</a>
                                     <!-- 選單內容列表 第二層 沒用到，但先保留以後可以用-->
                                     <!-- <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdown">
                                         <li class="dropdown">
@@ -155,28 +155,86 @@
 </header>
 
     <main class="mb-auto">
-        <div class="container mb-5 my-md-9">
-    <nav class="progress">
-        <div class="progress-bar finished" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><span>購物車</span></div>
-        <div class="progress-bar finished" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span>填寫訂購資料</span></div>
-        <div class="progress-bar finished" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>確定結帳</span></div>
-        <div class="progress-bar finished" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>進行付款</span></div>
-        <div class="progress-bar active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span>完成訂單</span></div>
+        <!-- 麵包屑 -->
+<section class="container my-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
+            <li class="breadcrumb-item"><a href="#">會員中心</a></li>
+            <li class="breadcrumb-item active"><a href="member-modify.html">資料修改</a></li>
+        </ol>
     </nav>
-</div>
-<section>
-    <div class="order container">
-        <div class="order__block order__pay fail">
-            <div class="order__bg">訂購失敗</div>
-        </div>
-        <div class="order__block">
-            <div class="order__row order__row--btn py-3 py-md-6">
-                <div class="order__form__inline justify-content-end">
-                    <!-- 
-                    <button type="button" class="btn btn-outline-primary px-0">繼續購買</button>
-                    <button type="submit" class="btn btn-primary px-0">確認訂單</button> -->
-                    <a href="payorder_step3.html" class="btn btn-primary px-0">返回</a>
-                </div>
+</section>
+<!-- 主要內容 -->
+<section class="login mb-md-8">
+    <div class="container bg-secondary py-md-8 register-bg">
+        <div class="row">
+            <div class="col-12 col-md-8 mx-auto my-8">
+                <form class="cs-form" data-style="2">
+                    <!-- 帳號 -->
+                    <div class="form-group row mb-3 mb-md-6">
+                        <label class="col-12 col-md-3 col-form-label necessary" for="memberAccount">會員帳號</label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control" id="memberAccount" placeholder="">
+                        </div>
+                    </div>
+                    <!-- 帳號 -->
+                    <div class="form-group row mb-3 mb-md-6">
+                        <label class="col-12 col-md-3 col-form-label necessary" for="memberEmail">註冊信箱</label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control" id="memberEmail" placeholder="">
+                        </div>
+                    </div>
+                    <!-- 姓名 -->
+                    <div class="form-group row mb-3 mb-md-6">
+                        <label class="col-12 col-md-3 col-form-label necessary" for="memberName">會員姓名</label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control" id="memberName" placeholder="">
+                        </div>
+                    </div>
+                    <!-- 手機 -->
+                    <div class="form-group row mb-3 mb-md-6">
+                        <label class="col-12 col-md-3 col-form-label necessary" for="memberPhone">手機號碼</label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control" id="memberPhone" placeholder="">
+                        </div>
+                    </div>
+                    <!-- 密碼 -->
+                    <div class="form-group row mb-3 mb-md-6">
+                        <label class="col-12 col-md-3 col-form-label necessary" for="memberPassword">請輸入密碼</label>
+                        <div class="col-12 col-md-9">
+                            <input type="password" class="form-control" id="memberPassword" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3 mb-md-6">
+                        <label class="col-12 col-md-3 col-form-label necessary" for="memberPassword">請再次輸入密碼</label>
+                        <div class="col-12 col-md-9">
+                            <input type="password" class="form-control" id="memberPassword" placeholder="">
+                        </div>
+                    </div>
+                    <!-- 收件人住址 -->
+                    <div class="form-group row mb-3 mb-md-6">
+                        <label class="col-12 col-md-3 col-form-label necessary" for="memberAddress">收件人住址</label>
+                        <div class="col-4 col-md-2 pr-0">
+                            <input type="text" class="form-control" id="memberCode" placeholder="">
+                        </div>
+                        <div class="col-8 col-md-7">
+                            <input type="text" class="form-control" id="memberAddress" placeholder="">
+                        </div>
+                    </div>
+                    <!-- 驗證碼 -->
+                    <div class="form-group row mb-3 mb-md-6">
+                        <label class="col-12 col-md-3 col-form-label necessary" for="memberVerification">請輸入驗證碼</label>
+                        <div class="col-12 col-md-9">
+                            <input type="text" class="form-control" id="memberVerification" placeholder="">
+                        </div>
+                    </div>
+                    <!-- 送出按紐 -->
+                    <div class="form-group row mb-6 mb-md-8">
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary btn-lg border-radius-l w-100"><span class="small">確認送出</span></button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -4,26 +4,19 @@ layout: ./app/layout.ejs
 engine: ejs
 current: purchase
 ---
-<div class="course-title">
-    <!-- 背景開始 -->
-    <div class="course-title__background">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <!-- 背景結束 -->
-    <h1 class="course-title__content container position-relative font-weight-normal text-white">
-        <div class="row"><div class="offset-md-1">新手指南</div></div>
-    </h1>
-</div>
-<!-- 麵包屑 開始 -->
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb container bg-white align-items-center breadcrumb__custom">
-        <li class="breadcrumb-item"><a href="guide.html">新手指南</a></li>
-        <li class="breadcrumb-item active"><a href="#">購買流程</a></li>
-    </ol>
-</nav>
-<!-- 麵包屑 結束 -->
+<!-- 標題 -->
+<article class="cs-title mb-4" data-style="2">
+    <h2 class="content" data-title="新手指南"></h2>
+</article>
+<!-- 麵包屑 -->
+<section class="container my-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
+            <li class="breadcrumb-item"><a href="#">新手指南</a></li>
+            <li class="breadcrumb-item active" aria-current="page">問與答</li>
+        </ol>
+    </nav>
+</section>
 <section class="qa">
     <div class="container">
         <div class="row">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>會員通知</title>
+    <title>結帳成功</title>
     <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -27,7 +27,7 @@
                 </div>
                 <!-- 購物車 -->
                 <div class="d-md-none mr-7">
-                    <a href="payorder_step1.html" class="position-relative d-block link-hover-accent">
+                    <a href="order-step1.html" class="position-relative d-block link-hover-accent">
                         <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                         <span class="icon-num">2</span>
                     </a>
@@ -66,15 +66,15 @@
                         </li>
                         <!-- 會員 (手機板 ) -->
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5 message" href="member_message.html">會員訊息
+                            <a class="nav-link py-3 px-md-0 py-md-5 message" href="member-message.html">會員訊息
                                 <span class="icon-num">2</span>
                             </a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5" href="order.html">查詢訂單</a>
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="member-order.html">查詢訂單</a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
-                            <a class="nav-link py-3 px-md-0 py-md-5" href="member_modify.html">修改資料</a>
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="member-modify.html">修改資料</a>
                         </li>
                         <li class="nav__item nav-item d-md-none">
                             <a class="nav-link py-3 px-md-0 py-md-5" href="login.html">登出</a>
@@ -92,7 +92,7 @@
                     <div class="d-none d-md-flex align-items-center">
                         <!-- 購物車 按鈕 -->
                         <div class="mr-md-7">
-                            <a href="payorder_step1.html" class="position-relative d-block link-hover-accent">
+                            <a href="order-step1.html" class="position-relative d-block link-hover-accent">
                                 <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
                                 <span class="icon-num">2</span>
                             </a>
@@ -105,15 +105,15 @@
                             </a>
                             <ul class="dropdown-menu text-center mt-0" aria-labelledby="navbarDropdown2">
                                 <li class="dropdown">
-                                    <a class="dropdown-item message" href="member_message.html">會員訊息<span class="icon-num">2</span></a>
+                                    <a class="dropdown-item message" href="member-message.html">會員訊息<span class="icon-num">2</span></a>
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="dropdown">
-                                    <a class="dropdown-item" href="order.html">查詢訂單</a>
+                                    <a class="dropdown-item" href="member-order.html">查詢訂單</a>
                                 </li>
                                 <li class="dropdown-divider"></li>
                                 <li class="dropdown">
-                                    <a class="dropdown-item" href="member_modify.html">修改資料</a>
+                                    <a class="dropdown-item" href="member-modify.html">修改資料</a>
                                     <!-- 選單內容列表 第二層 沒用到，但先保留以後可以用-->
                                     <!-- <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdown">
                                         <li class="dropdown">
@@ -155,82 +155,33 @@
 </header>
 
     <main class="mb-auto">
-        <div class="course-title mb-5" data-style="2">
-    <!-- 背景開始 -->
-    <div class="course-title__background">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <!-- 背景結束 -->
-    <h1 class="course-title__content container position-relative font-weight-normal text-white">
-        <div class="row"><div class="offset-md-1">會員通知</div></div>
-    </h1>
+        <div class="container mb-5 my-md-9">
+    <nav class="progress">
+        <div class="progress-bar finished" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><span>購物車</span></div>
+        <div class="progress-bar finished" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span>填寫訂購資料</span></div>
+        <div class="progress-bar finished" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span>確定結帳</span></div>
+        <div class="progress-bar finished" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>進行付款</span></div>
+        <div class="progress-bar active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><span>完成訂單</span></div>
+    </nav>
 </div>
-<!-- 麵包屑 開始 -->
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb container bg-white align-items-center breadcrumb__custom mt-md-8">
-        <li class="breadcrumb-item active"><a href="#">會員通知</a></li>
-    </ol>
-</nav>
-<!-- 麵包屑 結束 -->
-<section class="member message mb-md-8">
-    <div class="container">
-        <div class="member__message mb-5">
-            <div class="member__message__item__head">
-                <div class="member__message__item__head-td">訊息標題</div>
-                <div class="member__message__item__head-td">通知時間</div>
-            </div>
-            <div class="member__message__item__item" data-toggle="modal" data-target="#memberMsg">
-                <div class="member__message__item__item-td">【上架課程公告】</div>
-                <div class="member__message__item__item-td">2020-10-30 01:42:20</div>
-            </div>
-            <div class="member__message__item__item" data-toggle="modal" data-target="#memberMsg">
-                <div class="member__message__item__item-td">【上架課程公告】</div>
-                <div class="member__message__item__item-td">2020-10-30 01:42:20</div>
+<section>
+    <div class="order container">
+        <div class="order__block order__pay success">
+            <div class="order__bg">完成訂購！</div>
+        </div>
+        <div class="order__block">
+            <div class="order__row order__row--btn py-3 py-md-6">
+                <div class="order__form__inline justify-content-between">
+                    <!-- 
+                    <button type="button" class="btn btn-outline-primary px-0">繼續購買</button>
+                    <button type="submit" class="btn btn-primary px-0">確認訂單</button> -->
+                    <a href="mrmber_centre.html" class="btn btn-primary px-0">會員中心</a>
+                    <a href="index.html" class="btn btn-primary px-0">回首頁</a>
+                </div>
             </div>
         </div>
-        <!-- 分頁 開始 -->
-        <nav aria-label="navigation">
-            <ul class="pagination__custom pagination justify-content-end mb-8" id="pagination">
-                <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link current" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-                </li>
-            </ul>
-            </nav>
-        <!-- 分頁 結束 -->
     </div>
 </section>
-<!-- Modal -->
-<div class="modal fade" id="memberMsg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body p-3 p-md-6">
-            <h5 class="modal-title mb-3" id="exampleModalCenterTitle">【上架課程公告】<span class="float-right font-weight-normal">2020-10-30</span></h5>
-            2020-11-16 本日上傳課程：<br/><br/>
-            上課日期 2020-11-08<br/>
-            2021 【司律】云揚的國際公法全修AB 第02堂<br/><br/>
-            上課日期 2020-11-09<br/>
-            2021 司特四等全修-安卓 刑事訴訟法概要 第05堂<br/>
-            2021 高普考全修班-許遠公共管理 第19堂<br/><br/>
-            上課日期 2020-11-10<br/>
-            2021 【司律】程穎的身分法全修AB 第07堂<br/>
-            2021 【司律】司特四等全修班-徐偉超法院組織法 第03堂<br/>
-        </div>
-      </div>
-    </div>
-  </div>
     </main>
     <footer class="footer bg-accent py-3">
     <div class="container">

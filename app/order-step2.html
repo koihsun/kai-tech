@@ -2,7 +2,7 @@
 title: 填寫訂購資料
 layout: ./app/layout.ejs
 engine: ejs
-current: payorder_step2
+current: order-step2
 ---
 <div class="container mb-5 my-md-9">
     <nav class="progress">
@@ -15,80 +15,70 @@ current: payorder_step2
 </div>
 <section>
     <div class="order container">
-        <div class="order__block__shadow px-3 py-3 px-md-9 py-md-6 mb-6 mb-md-11">
+        <div class="order__block__shadow px-3 py-3 p-md-6 mb-6">
             <h2 class="mb-3 mb-md-6">訂購明細</h2>
-            <ul class="order__box list-unstyled">
-                <li class="order__head">
-                    <div class="order__head-td">課程</div>
-                    <div class="order__head-td">總堂數</div>
-                    <div class="order__head-td">原價</div>
-                    <div class="order__head-td">特價</div>
-                </li>
-                <li class="order__content side__box">
-                    <div class="order__item">
-                        <div class="order__item-td"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i><span>2020司律全修A班證交法</span></div>
-                        <div class="order__item-td">30</div>
-                        <div class="order__item-td">52800</div>
-                        <div class="order__item-td">32800</div>
-                    </div>
-                    <div class="side__content">
-                        <div class="order__item__content">
-                            <div class="order__item__head">
-                                <div class="order__item__head-td">科目</div>
-                                <div class="order__item__head-td">名稱</div>
-                                <div class="order__item__head-td">師資</div>
-                            </div>
-                            <div class="order__item__item">
-                                <div class="order__item__item-td">民法概要</div>
-                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
-                                <div class="order__item__item-td">常陽</div>
-                            </div>
-                            <div class="order__item__item">
-                                <div class="order__item__item-td">民法概要</div>
-                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
-                                <div class="order__item__item-td">常陽</div>
-                            </div>
-                            <div class="order__item__item">
-                                <div class="order__item__item-td">民法概要</div>
-                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
-                                <div class="order__item__item-td">常陽</div>
+            <div class="cs-sidebar" data-style="2">
+                <ul class="cs-table" data-style="6">
+                    <!-- 標題 -->
+                    <li class="order__head">
+                        <div class="order__head-td">課程</div>
+                        <div class="order__head-td">總堂數</div>
+                        <div class="order__head-td">原價</div>
+                        <div class="order__head-td">特價</div>
+                        <div class="order__head-td">刪除</div>
+                    </li>
+                    <!-- 購買商品項1 -->
+                    <li class="side__box active">
+                        <div class="side__title">
+                            <div class="order__item px-4">
+                                <div class="order__item-td"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i><span>2020司律全修A班證交法</span></div>
+                                <div class="order__item-td order__item--class">30</div>
+                                <div class="order__item-td order__item--origin"><span class="origin">52800</span></div>
+                                <div class="order__item-td order__item--special">32800</div>
+                                <div class="order__item-td"><a href="" class="btn"><i class="fa fa-trash fa-lg text-danger" aria-hidden="true"></i></a></div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="order__content side__box">
-                    <div class="order__item">
-                        <div class="order__item-td"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i><span>2020司律全修A班證交法</span></div>
-                        <div class="order__item-td">30</div>
-                        <div class="order__item-td">52800</div>
-                        <div class="order__item-td">32800</div>
-                    </div>
-                    <div class="side__content">
-                        <div class="order__item__content">
-                            <div class="order__item__head">
-                                <div class="order__item__head-td">科目</div>
-                                <div class="order__item__head-td">名稱</div>
-                                <div class="order__item__head-td">師資</div>
+                        <!-- 購買商品介紹 -->
+                        <div class="side__content cs-table" data-style="2">
+                            <div class="table__head px-6 pr-md-8">
+                                <div class="table__head-td">科目</div>
+                                <div class="table__head-td">名稱</div>
+                                <div class="table__head-td">師資</div>
                             </div>
-                            <div class="order__item__item">
-                                <div class="order__item__item-td">民法概要</div>
-                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
-                                <div class="order__item__item-td">常陽</div>
-                            </div>
-                            <div class="order__item__item">
-                                <div class="order__item__item-td">民法概要</div>
-                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
-                                <div class="order__item__item-td">常陽</div>
-                            </div>
-                            <div class="order__item__item">
-                                <div class="order__item__item-td">民法概要</div>
-                                <div class="order__item__item-td">2020司特四等書記官總複習 01</div>
-                                <div class="order__item__item-td">常陽</div>
+                            <div class="table__item px-6 pr-md-8">
+                                <div class="table__item-td">民法概要</div>
+                                <div class="table__item-td">2020司特四等書記官總複習 01</div>
+                                <div class="table__item-td">常陽</div>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <!-- 購買商品項2 -->
+                    <li class="side__box active">
+                        <div class="side__title">
+                            <div class="order__item px-4">
+                                <div class="order__item-td"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i><span>2020司律全修A班證交法</span></div>
+                                <div class="order__item-td order__item--class">30</div>
+                                <div class="order__item-td order__item--origin"><span class="origin">52800</span></div>
+                                <div class="order__item-td order__item--special">32800</div>
+                                <div class="order__item-td"><a href="" class="btn"><i class="fa fa-trash fa-lg text-danger" aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                        <!-- 購買商品介紹 -->
+                        <div class="side__content cs-table" data-style="2">
+                            <div class="table__head px-6 pr-md-8">
+                                <div class="table__head-td">科目</div>
+                                <div class="table__head-td">名稱</div>
+                                <div class="table__head-td">師資</div>
+                            </div>
+                            <div class="table__item px-6 pr-md-8">
+                                <div class="table__item-td">民法概要</div>
+                                <div class="table__item-td">2020司特四等書記官總複習 01</div>
+                                <div class="table__item-td">常陽</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <div class="order__row py-3 py-md-6">
                 <div class="order__form order__form--padding d-flex justify-content-between flex-wrap">
                     <div class="form-check form-check-inline mb-3 mb-md-0">
@@ -178,8 +168,8 @@ current: payorder_step2
                     <!-- 
                     <button type="button" class="btn btn-outline-primary px-0">繼續購買</button>
                     <button type="submit" class="btn btn-primary px-0">確認訂單</button> -->
-                    <a href="payorder_step1.html" class="btn btn-outline-primary px-0">返回</a>
-                    <a href="payorder_step3.html" class="btn btn-primary px-0">前往結帳</a>
+                    <a href="order-step1.html" class="btn btn-outline-primary px-0">返回</a>
+                    <a href="order-step3.html" class="btn btn-primary px-0">前往結帳</a>
                 </div>
             </div>
         </div>

@@ -31,17 +31,16 @@
 @import "components/table";
 @import "components/pagination";
 @import "components/nav";
+@import "components/modal";
+@import "components/progress";
 
 //layout
 @import "layout/index";
 @import "layout/buycourse";
 
-
-@import "page/member";
-@import "page/course";
-@import "page/payorder";
-@import "page/gotoclass";
+@import "page/_payorder";
 @import "page/team";
-@import "page/booking";
-@import "page/news";
 @import "page/guide";
+@import "page/news";
+@import "page/gotoclass";
+@import "page/booking";
