@@ -11,7 +11,7 @@
         }
     }
     .table__body {
-        padding: 2rem;
+        padding: 1rem 1.5rem;
         @include media-breakpoint-up(md) {
             padding: 2rem 3rem;
         }
@@ -42,16 +42,12 @@
         }
     }
 }
-//購買課程資訊頁
+//購物車課程明細
 .cs-table[data-style="2"] {
     .table {
         width: 100%;
         &__head {
             font-weight: bold;
-            @include media-breakpoint-up(md) {
-                font-size: 1.25rem;
-                margin: 0.5rem 0;
-            }
         }
         &__head, &__item{
             display: flex;
@@ -308,7 +304,7 @@
     }
 }
 
-//cart-step1
+//購物車 cart-step1
 .cs-table[data-style="6"] {
     .order {
         &__head, &__item{
@@ -404,7 +400,6 @@
     .side__box {
         @include media-breakpoint-down(sm) {
             margin-bottom: 1rem;
-            box-shadow: 0 5px 20px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.0);
             border: 1px solid #95b9bd;
         }
     }
@@ -417,4 +412,235 @@
         }
     }
 }
+.cs-table[data-style="7"] {
+    display: table;
+    border-collapse: separate;
+    border-spacing: .5rem;
+    width: 100%;
+    dl {
+        display: table-row;
+    }
+    dt,dd {
+        display: table-cell;
+    }
+    dt {
+        white-space: nowrap;
+    }
+    &.dl-align-right {
+        dt,dd {
+            display: table-cell;
+            text-align: right;
+        }
+    }
+}
+//最新消息
+.cs-table[data-style="8"] {
+    .table__item {
+        width: 100%;
+        transition: .3s;
+        box-shadow: 0 2px 4px 0 rgba(93, 93, 93, 0.4);
+        border-bottom: solid 0.5px $light;
+        margin-bottom: 1rem;
 
+        @include media-breakpoint-up(md) {
+            box-shadow: none;
+            margin-bottom: 0;
+            border-right: 0;;
+            border-left: 0;;
+        }
+
+        &:hover {
+            background-color: #fafafa;
+        }
+        > a {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 1.25rem 2rem;
+            color: $black;
+            text-decoration: none;
+            justify-content: space-between;
+            @include media-breakpoint-up(md) {
+                justify-content: flex-start;
+                padding: 1.25rem 0;
+            }
+            &::before {
+                content: "";
+                width: 45px;
+                flex-basis: 45px;
+                margin-left: 1rem;
+                margin-right: 2rem;
+                @include media-breakpoint-down(sm) {
+                    position: absolute;
+                    top: 10px;
+                    left: -10px;
+                    width: 36px;
+                    margin: 0;
+                }
+            }
+        }
+
+        &.new {
+            > a::before {
+                height: 19px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position-x: center;
+                background-position-y: center;
+                background-image: url(../../assets/images/icon/icons-new.svg);
+            }
+        }
+
+        &--date {
+            order: 2;
+            @include media-breakpoint-up(md) {
+                width: 150px;
+                flex-basis: 150px;
+                order: 1;
+                text-align: left;
+            }
+        }
+        &--type {
+            width: 120px;
+            flex-basis: 120px;
+            order: 1;
+            @include media-breakpoint-up(md) {
+                width: 150px;
+                flex-basis: 150px;
+                order: 2;
+            }
+        }
+        &--title {
+            flex:  1 0 100%;
+            order: 3;
+            @include media-breakpoint-up(md) {
+                flex-basis: 0;
+                order: 3;
+                padding: 0;
+            }
+        }
+    }
+}
+.cs-table[data-style="9"] {
+    .course {
+        &__head, &__item{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 100%;
+            @include media-breakpoint-down(md) {
+                padding: .5rem;
+                border-bottom: 1px solid $gray-400;
+                box-shadow: 0 0px 36px rgba(0, 0, 0, 0.1);
+            }
+            @include media-breakpoint-up(md) {
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                align-content: center;
+                margin-bottom: 0;
+            }
+
+            &-td {
+                padding: 0 10px;
+                @include media-breakpoint-up(md) {
+                    &:nth-child(1) {
+                        width: calc((100% - 100px) * .90)
+                    }
+                    &:nth-child(2){
+                        width: calc((100% - 100px) * .10);
+                    }
+                    &:nth-last-child(1) {
+                        text-align: center;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+        &__head {
+            display: none;
+            @include media-breakpoint-up(lg) {
+                display: flex;
+                font-size: 1.25rem;
+                padding: 10px 30px;
+                font-weight: bold;
+            }
+        }
+        &__item {
+            position: relative;
+            &:nth-last-of-type(1) {
+                @include media-breakpoint-up(md) {
+                    border-bottom: 0;
+                }
+            }
+            @include media-breakpoint-down(md) {
+                &--subject::before {
+                    content: "科目";
+                    font-weight: bold;
+                    margin-right: 1rem;
+                }
+                &--class::before {
+                    content: "堂數";
+                    font-weight: bold;
+                    margin-right: 1rem;
+                }
+                &--icon {
+                    position: absolute;
+                    top: 1rem;
+                    right: 0;
+                }
+            }
+        }
+        .icon-icon_arrow {
+            transform: rotate(-90deg);
+        }
+    }
+    .side__box {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 1rem;
+            border: 1px solid #95b9bd;
+        }
+    }
+    .side__title {
+        font-size: 1rem;
+        @include media-breakpoint-down(md) {
+            display: block;
+            border-bottom: 0;
+            height: auto;
+        }
+    }
+    .side__content {
+        @include media-breakpoint-up(md) {
+            padding: 0 10%;
+            background-color: rgba(218, 231, 237, 0.5);
+        }
+    }
+}
+.cs-table[data-style="10"] {
+    .table {
+        width: 100%;
+        &__head {
+            font-weight: bold;
+        }
+        &__head, &__item{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            padding: .5rem 0;
+            &-td {
+                padding: 0 4px;
+                &:nth-child(1) {
+                    width: 60%;
+                    margin-right: auto;
+                    padding-left: 0;
+                }
+                &:nth-child(2), &:nth-child(3), &:nth-child(4){
+                    width: 20%;
+                }
+            }
+        }
+    }
+}

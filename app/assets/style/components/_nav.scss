@@ -1,4 +1,46 @@
+//首頁-最新消息
 .cs-nav[data-style="1"] {
+    height: 100%;
+    .nav__bar {
+        position: relative;
+        white-space: nowrap;
+        list-style: none;
+        text-align: center;
+        font-size: .75rem;
+        overflow-x: auto;
+        display: flex; //scroll-x
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            font-size: 1rem;
+        }
+
+        > li {
+            cursor: pointer;
+            transition: .3s;
+            background-color: $light;
+            color: $dark;
+            margin: .5rem 0 2rem .25rem;
+            padding:  6px 20px;
+            border-radius: 50px;
+
+            @include media-breakpoint-up(md) {
+                width: 100%;
+                margin: 0;
+                padding:  1.25rem 0;
+                border-radius: 0;
+            }
+            &.active, &:hover {
+                background: $primary;
+                color: $white;
+            } 
+        }
+    }
+}
+//購買課程 buycourse-page
+.cs-nav[data-style="2"] {
     .nav__bar {
         position: relative;
         white-space: nowrap;
@@ -22,16 +64,34 @@
             padding-bottom: 1rem;
 
             &.active, &:hover {
-                background: #0094a4;
+                background: $primary;
                 color: $white;
             } 
         }
     }
     .nav__content {
-        background-color: $secondary;
+        background-color: $light;
         height: auto;
         p {
             margin-bottom: 0.5rem;
         }
+    }
+}
+//最新消息, Q&A
+.cs-nav[data-style="3"] {
+    .nav-link {
+        color: #bebebe;
+        position: relative;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        &::after {
+            content: "\f0da";
+            position: absolute;
+            right: 0;
+        }
+    }
+    .nav-link.active {
+        background-color: $white;
+        color: #2d2d2d;
     }
 }

@@ -9,89 +9,89 @@ current: news
     <h2 class="content" data-title="最新消息"></h2>
 </article>
 <!-- 麵包屑 -->
-<section class="container my-4">
+<section class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
             <li class="breadcrumb-item"><a href="#">最新消息</a></li>
         </ol>
     </nav>
 </section>
-<section class="mb-8 mb-md-10 mb-lg-11">
-    <div class="container">
-        <aside>
-            <div class="filter2__bar" id="filter2-bar">
-                <div data-filter="all" class="active filter__all filter__type">全部新聞</div>
-                <div class="dropdown mr-1">
-                    <button type="button" class="btn btn-secondary dropdown-toggle filter__select" id="dropdownNews" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">全部新聞</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                      <div data-filter="kind1" class="dropdown-item filter__type">大法官釋字</div>
-                      <div data-filter="kind2" class="dropdown-item filter__type">最高法院決議</div>
-                      <div data-filter="kind4" class="dropdown-item filter__type">最新修法</div>
-                      <div data-filter="kind4" class="dropdown-item filter__type">考試新訊</div>
-                    </div>
+<section class="container pb-8 cs-nav" data-style="3">
+    <div class="row">
+        <!-- 分類導覽 -->
+        <aside class="col-12 col-md-2" id="filter-bar">
+            <ul class="nav flex-column nav-pills d-none d-md-block" aria-orientation="vertical" >
+                <li data-filter="all" class="nav-link fa active">全部</li>
+                <li data-filter="kind1" class="nav-link fa">大法官釋字</li>
+                <li data-filter="kind2" class="nav-link fa">最高法院決議</li>
+                <li data-filter="kind3" class="nav-link fa">最新修法</li>
+                <li data-filter="kind4" class="nav-link fa">考試新訊</li>
+            </ul>
+            <div class="dropdown cs-select mb-6 d-md-none" data-style="1">
+                <button type="button" class="btn dropdown-toggle select__btn" id="dropdownCourse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">全部新聞</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                  <div data-filter="all"  class="dropdown-item select__option">全部</div>
+                  <div data-filter="kind1" class="dropdown-item select__option">大法官釋字</div>
+                  <div data-filter="kind2" class="dropdown-item select__option">最高法院決議</div>
+                  <div data-filter="kind3" class="dropdown-item select__option">最新修法</div>
+                  <div data-filter="kind4" class="dropdown-item select__option">考試新訊</div>
                 </div>
-            </ul>
+            </div>
         </aside>
-        
-        <aside class="filter2 mb-5">
-            <ul class="filter2__list" id="filter2-list">
-                <li class="filter2__item" data-filter-class="all, kind1">
-                    <a href="news_page.html">
-                        <span class="filter2__item--new"></span>
-                        <span class="filter2__item--date">20201030</span>
-                        <span class="filter2__item--type">考試新訊</span>
-                        <h6 class="filter2__item--title">【上架課程公告】</h6>
+        <!-- 主要內容 -->
+        <div class="col-12 col-md-10">
+            <ul class="cs-table" id="filter-list" data-style="8">
+                <li class="table__item" data-filter-class="all, kind1">
+                    <a href="news-page.html">
+                        <span class="table__item--date">20201030</span>
+                        <span class="table__item--type">考試新訊</span>
+                        <h6 class="table__item--title">【上架課程公告】</h6>
                     </a>
                 </li>
-                <li class="filter2__item" data-filter-class="all, kind2">
-                    <a href="news_page.html">
-                        <span class="filter2__item--new"></span>
-                        <span class="filter2__item--date">20201030</span>
-                        <span class="filter2__item--type">考試新訊</span>
-                        <h6 class="filter2__item--title">【上架課程公告】</h6>
+                <li class="table__item" data-filter-class="all, kind2">
+                    <a href="news-page.html">
+                        <span class="table__item--date">20201030</span>
+                        <span class="table__item--type">考試新訊</span>
+                        <h6 class="table__item--title">【上架課程公告】</h6>
                     </a>
                 </li>
-                <li class="filter2__item" data-filter-class="all, kind2">
-                    <a href="news_page.html">
-                        <span class=""></span>
-                        <span class="filter2__item--date">20201030</span>
-                        <span class="filter2__item--type">考試新訊</span>
-                        <h6 class="filter2__item--title">【上架課程公告】</h6>
+                <li class="table__item" data-filter-class="all, kind2">
+                    <a href="news-page.html">
+                        <span class="table__item--date">20201030</span>
+                        <span class="table__item--type">考試新訊</span>
+                        <h6 class="table__item--title">【上架課程公告】</h6>
                     </a>
                 </li>
-                <li class="filter2__item" data-filter-class="all, kind2">
-                    <a href="news_page.html">
-                        <span class=""></span>
-                        <span class="filter2__item--date">20201030</span>
-                        <span class="filter2__item--type">考試新訊</span>
-                        <h6 class="filter2__item--title">【上架課程公告】</h6>
+                <li class="table__item" data-filter-class="all, kind2">
+                    <a href="news-page.html">
+                        <span class="table__item--date">20201030</span>
+                        <span class="table__item--type">考試新訊</span>
+                        <h6 class="table__item--title">【上架課程公告】</h6>
                     </a>
                 </li>
-                <li class="filter2__item" data-filter-class="all, kind2">
-                    <a href="news_page.html">
-                        <span class=""></span>
-                        <span class="filter2__item--date">20201030</span>
-                        <span class="filter2__item--type">考試新訊</span>
-                        <h6 class="filter2__item--title">【上架課程公告】</h6>
+                <li class="table__item" data-filter-class="all, kind2">
+                    <a href="news-page.html">
+                        <span class="table__item--date">20201030</span>
+                        <span class="table__item--type">考試新訊</span>
+                        <h6 class="table__item--title">【上架課程公告】</h6>
                     </a>
                 </li>
             </ul>
-        </aside>
-
-        <!-- 分頁 開始 -->
-        <nav aria-label="navigation" class="member__order__item__content pt-10">
-            <ul class="pagination__custom pagination justify-content-end mb-8" id="pagination">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link current" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-            </ul>
-        </nav>
-        <!-- 分頁 結束 -->
+            <!-- 分頁 開始 -->
+            <nav aria-label="navigation" class="my-6 my-md-8">
+                <ul class="pagination justify-content-end" id="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link current" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+                </ul>
+            </nav>
+            <!-- 分頁 結束 -->
+        </div>
     </div>
 </section>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>關於我們</title>
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <header class="header" id="header">
+    <nav class="navbar navbar-expand-md bg-white">
+        <div class="container-fluid container-lg ">
+            <!-- 手機板 導覽列 開始 -->
+                <!-- logo -->
+                <a class="navbar-brand d-md-none p-3 p-md-0" href="index.html">
+                    <img class="nav__logo--img" src="./assets/images/logo-mobile.png" alt="Logo">
+                </a>
+                <!-- 搜尋按鈕 -->
+                <div class="d-md-none ml-auto mr-3">
+                    <a class="position-relative d-block link-hover-accent" id="btn-search"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>
+                </div>
+                <!-- 購物車 -->
+                <div class="d-md-none mr-7">
+                    <a href="order-step1.html" class="position-relative d-block link-hover-accent">
+                        <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                        <span class="icon-num">2</span>
+                    </a>
+                </div>
+                <!-- hamburger -->
+                <div id="hamberger" class="nav__hamberger d-md-none" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+            <!-- 手機板 導覽列 結束 -->
+            <!-- 網頁版 導覽列 開始-->
+                <div class="nav__menu collapse navbar-collapse justify-content-between align-items-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <!-- logo -->
+                        <li class="nav__logo d-none d-md-block nav__item nav-item">
+                            <h1>
+                                <a class="d-block mr-md-5" href="index.html">
+                                    <img class="nav__logo--img" src="./assets/images/logo.png" alt="Logo">
+                                </a>
+                            </h1>
+                        </li>
+                        <!-- 導覽列 (網頁板/手機板) -->
+                        <li class="nav__item nav-item mx-md-3">
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="booking-lecture.html">預約講堂</a>
+                        </li>
+                        <li class="nav__item nav-item mx-md-3">
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="buycourse-all.html">購買課程</a>
+                        </li>
+                        <li class="nav__item nav-item mx-md-3">
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="team-list.html">師資團隊</a>
+                        </li>
+                        <li class="nav__item nav-item mx-md-3">
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="gotoclass-list.html">上課去</a>
+                        </li>
+                        <!-- 會員 (手機板 ) -->
+                        <li class="nav__item nav-item d-md-none">
+                            <a class="nav-link py-3 px-md-0 py-md-5 message" href="member-message.html">會員訊息
+                                <span class="icon-num">2</span>
+                            </a>
+                        </li>
+                        <li class="nav__item nav-item d-md-none">
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="member-order.html">查詢訂單</a>
+                        </li>
+                        <li class="nav__item nav-item d-md-none">
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="member-modify.html">修改資料</a>
+                        </li>
+                        <li class="nav__item nav-item d-md-none">
+                            <a class="nav-link py-3 px-md-0 py-md-5" href="login.html">登入</a>
+                        </li>
+                        <!-- search -->
+                        <li class="ml-md-3 ml-lg-6">
+                            <form class="search__form d-none d-lg-block">
+                                <input type="search" value="" placeholder="課程搜尋" class="search__input" id="h-search">
+                                <button type="submit" class="search__button"><i class="fa fa-search text-muted" aria-hidden="true"></i></svg>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                    <!-- icon (網頁版導覽列) 開始 -->
+                    <div class="d-none d-md-flex align-items-center">
+                        <!-- 購物車 按鈕 -->
+                        <div class="mr-md-7">
+                            <a href="order-step1.html" class="position-relative d-block link-hover-accent">
+                                <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                                <span class="icon-num">2</span>
+                            </a>
+                        </div>
+                        <!-- 會員 按鈕 -->
+                        <div class="mr-md-7 dropdown">
+                            <a href="#" class="position-relative d-block link-hover-accent" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                                <span class="icon-num">2</span>
+                            </a>
+                            <ul class="dropdown-menu text-center mt-0" aria-labelledby="navbarDropdown2">
+                                <li class="dropdown">
+                                    <a class="dropdown-item message" href="member-message.html">會員訊息<span class="icon-num">2</span></a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-item" href="member-order.html">查詢訂單</a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-item" href="member-modify.html">修改資料</a>
+                                    <!-- 選單內容列表 第二層 沒用到，但先保留以後可以用-->
+                                    <!-- <ul class="dropdown-menu mt-0" aria-labelledby="navbarDropdown">
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 登入 按鈕 -->
+                        <a href="login.html" class="btn btn-primary text-nowrap rounded-xl  btn-hover-primary px-md-5">登入</a>
+                    </div>
+                    <!-- icon (網頁版導覽列) 結束 -->
+                </div>
+            <!-- 網頁版 導覽列 結束-->
+        </div>
+    </nav>
+    <!-- 手機板 search 開始 -->
+    <form class="search__form search__form--mobile d-md-none" id="search-box">
+        <div>
+            <input type="search" value="" placeholder="課程搜尋" class="search__input" id="h-search">
+            <button type="submit" class="search__button">
+                <svg class="submit-button">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                </svg>
+            </button>
+        </div>
+    </form>
+    <!-- 搜尋符號 -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
+        <symbol id="search" viewBox="0 0 32 32">
+        <path d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
+        </symbol>
+    </svg>
+    <!-- 搜尋符號 -->
+</header>
+
+    <main class="mb-auto">
+        <!-- 標題 -->
+<article class="cs-title mb-4" data-style="2">
+    <h2 class="content" data-title="新手指南"></h2>
+</article>
+<!-- 麵包屑 -->
+<section class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
+            <li class="breadcrumb-item"><a href="guide.html">新手指南</a></li>
+            <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+        </ol>
+    </nav>
+</section>
+<section class="container pb-8">
+    <div class="bg-light p-6 p-md-8">
+        <p class="px-md-6">
+            品牌故事<br><br>
+            G哥在100年創立考試用書出版社，在107年創立讀家補習班，，因為有許多老師跟我反應不想對著沒有學生的錄影機上課，所以就開了補習班，G哥從民國84年就到其他補習班打工，東吳法律系畢業後還是一直從事補教業，一直到現在有超過20年的經驗，深知如何找到最好的補教名師，還有最快幫助考生考取的方式，因應107年考試的陸續考革，G哥知道必需要有補習班讓老師跟考生面對面改題或指導才是最有效的方式，於是成立了讀家補習班，在這裏，希望G哥跟補教名師們能共同攜手帶領大家更快通過考試上岸，幫助考生是G哥一輩子的熱愛及理想，也是讀家師資群的共同理想。<br><br>
+            HTML 文字編輯器
+        </p>
+    </div>
+</section>
+    </main>
+    <footer class="footer bg-accent py-3">
+    <div class="container">
+        <div class="footer__top text-white mb-md-8 px-3 px-md-0 pt-3">
+            <div class="d-flex justify-content-center align-items-center flex-wrap">
+                <div class="footer__logo order-1 order-md-0">
+                    <h2><a href="index.html"><img src="assets/images/footer_logo.png" alt=""></a></h2>
+                </div>
+                <ul class="footer__menu list-unstyled d-flex align-self-stretch flex-wrap order-0 order-md-1">
+                    <li class="footer__menu--block">
+                        <h5 class="mb-3"><a class="text-white" href="guide.html">新手指南</a></h5>
+                        <ul class="footer__menu--item list-unstyled d-flex flex-wrap">
+                            <li class=""><a href="guide-policy.html">服務條款</a></li>
+                            <li class=""><a href="guide-know.html">購買須知</a></li>
+                            <li class=""><a href="guide-about.html">關於我們</a></li>
+                            <li class=""><a href="guide-introduction.html">班別介紹</a></li>
+                            <li class=""><a href="guide-purchase.html">購買流程</a></li>
+                            <li class=""><a href="guide-qa.html">常見問題</a></li>
+                            <li class=""><a href="guide-contact.html">聯絡我們</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer__menu--block">
+                        <h5 class="mb-3"><a class="text-white" href="#">相關連結</a></h5>
+                        <ul class="footer__menu--item list-unstyled d-flex flex-wrap">
+                            <li class=""><a href="">讀享</a></li>
+                            <li class=""><a href="">新學林</a></li>
+                            <li class=""><a href="">立法院法律系統</a></li>
+                            <li class=""><a href="">考選部</a></li>
+                            <li class=""><a href="">大法官釋字</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom px-3 px-md-0  pb-3">
+            <div class="row justify-content-between align-items-center">
+                <div class="footer__copyright col-12 col-md-10 mb-6 mb-md-0">
+                    <p class="mb-2 mb-md-0">Copyright© 2020 讀家雲端網站 XX科技股份有限公司 All rights reserved.</p>
+                    <p>地址：10047 台北市中正區館前路8號4樓 TEL：02-77266667 E-MAIL：readerplace0129@gmail.com</p>
+                </div>
+                <ul class="col-12 col-md-2 list-unstyled d-flex justify-content-center align-items-center">
+                    <li class="mx-3"><a href=""><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="mx-3"><a href=""><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+                    <li class="mx-3"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+                        <g fill="none" fill-rule="evenodd">
+                            <g>
+                                <g>
+                                    <path d="M0 0H35V35H0z" transform="translate(-1197 -293) translate(1193 289)"/>
+                                    <path fill="#FFF" d="M21.8 4.2c4.97 0 9 4.03 9 9v8.6c0 4.97-4.03 9-9 9h-8.6c-4.97 0-9-4.03-9-9v-8.6c0-4.97 4.03-9 9-9h8.6zm-4.65 3.527C11.555 7.727 7 11.464 7 16.057c0 4.115 3.612 7.562 8.488 8.217.33.07.78.221.895.505.101.258.067.655.032.924l-.139.872c-.038.257-.203 1.014.888.551 1.092-.46 5.85-3.487 7.98-5.965 1.459-1.615 2.156-3.27 2.156-5.103 0-4.594-4.555-8.331-10.15-8.331zm-5.991 5.905c.294 0 .533.244.533.54v3.54h1.485c.294 0 .532.243.532.54 0 .293-.238.537-.532.537H11.16c-.292 0-.533-.244-.533-.538v-4.08c0-.295.241-.539.533-.539zm3.573 0c.292 0 .53.244.53.54v4.08c0 .293-.238.537-.533.537-.292 0-.53-.244-.53-.538v-4.08c0-.295.238-.539.533-.539zm8.65 0c.293 0 .53.244.53.54 0 .297-.237.538-.532.538h-1.485v.962h1.485c.295 0 .532.244.532.54 0 .295-.237.538-.532.538h-1.485v.962h1.485c.295 0 .532.243.532.54 0 .293-.237.537-.532.537H21.36c-.291 0-.53-.244-.53-.538v-4.08c0-.295.239-.539.533-.539h2.018zm-3.796 0c.292 0 .533.244.533.54v4.08c0 .23-.147.435-.366.51-.054.017-.112.026-.168.026-.178 0-.33-.078-.431-.215l-2.067-2.836v2.513c0 .294-.236.538-.533.538-.293 0-.53-.244-.53-.538v-4.079c0-.231.147-.436.364-.509.05-.02.115-.028.164-.028.165 0 .317.09.419.218l2.082 2.847v-2.528c0-.295.239-.539.533-.539z" transform="translate(-1197 -293) translate(1193 289)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    <a href="" id="gotop" class="btn-hover-focus"><i class="fa fa-angle-up"></i></a>
+
+    <!-- Bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!--     <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/vendor/isotope/isotope.pkgd.min.js"></script> -->
+    
+    <script src="./assets/js/vendors.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,4 @@
+//購買課程 buycourse-all
 .cs-card[data-style="3"] {
     max-width: 300px;
     min-height: 300px;
@@ -63,7 +64,7 @@
         }
     }
 }
-
+//購買課程 buycourse-list
 .cs-card[data-style="4"] {
     .course{
         &__card {
@@ -82,8 +83,15 @@
             text-align: center;
             background-color: #8dd2de;
             color: $white;
-            line-height: 2;
-            font-size: .75rem;
+            line-height: 1.5;
+            padding: 0 .5rem;
+            max-height: 3rem;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
             @include media-breakpoint-up(md) {
                 font-size: 1rem;
             }
@@ -122,5 +130,38 @@
     }
     a {
         text-decoration: none !important;
+    }
+    @include media-breakpoint-down(sm) {
+        >* {
+            &:nth-of-type(odd) .course__card  {
+                margin-right: -10px;
+            }
+            &:nth-of-type(even) .course__card {
+                margin-left: -10px;
+            }
+        }
+    }
+}
+
+.cs-card[data-style="5"] {
+    display: block;
+    text-decoration: none !important;
+    color: $black;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 5px 20px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(0);
+    &:hover .bg-image {
+        transform: scale(1.1);
+    }
+    .card-img{
+        position: relative;
+        > div{
+            padding-bottom: 70%;
+            transition: all 1s;
+        }
+    }
+    .t-name {
+        border-bottom: 2px solid #000;
     }
 }

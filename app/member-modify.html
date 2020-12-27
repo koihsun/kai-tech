@@ -4,87 +4,93 @@ layout: ./app/layout.ejs
 engine: ejs
 current: member-modify
 ---
+<!-- 標題 -->
+<article class="cs-title mb-4" data-style="2">
+    <h2 class="content" data-title="會員資料修改"></h2>
+</article>
 <!-- 麵包屑 -->
-<section class="container my-4">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
-            <li class="breadcrumb-item"><a href="#">會員中心</a></li>
-            <li class="breadcrumb-item active"><a href="member-modify.html">資料修改</a></li>
-        </ol>
-    </nav>
+<section class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
+                    <li class="breadcrumb-item"><a href="member.html">會員中心</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">會員資料修改</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
 </section>
 <!-- 主要內容 -->
-<section class="login mb-md-8">
-    <div class="container bg-secondary py-md-8 register-bg">
-        <div class="row">
-            <div class="col-12 col-md-8 mx-auto my-8">
-                <form class="cs-form" data-style="2">
-                    <!-- 帳號 -->
-                    <div class="form-group row mb-3 mb-md-6">
-                        <label class="col-12 col-md-3 col-form-label necessary" for="memberAccount">會員帳號</label>
-                        <div class="col-12 col-md-9">
-                            <input type="text" class="form-control" id="memberAccount" placeholder="">
-                        </div>
+<section class="container pb-8 pt-md-6">
+    <div class="row">
+        <div class="col-12 col-md-8 mx-auto">
+            <form class="cs-form" data-style="2">
+                <!-- 帳號 -->
+                <div class="form-group row mb-2 mb-md-6">
+                    <label class="col-12 col-md-3 col-form-label necessary" for="memberAccount">會員帳號</label>
+                    <div class="col-12 col-md-9">
+                        <input type="text" class="form-control border-accent" id="memberAccount" placeholder="">
                     </div>
-                    <!-- 帳號 -->
-                    <div class="form-group row mb-3 mb-md-6">
-                        <label class="col-12 col-md-3 col-form-label necessary" for="memberEmail">註冊信箱</label>
-                        <div class="col-12 col-md-9">
-                            <input type="text" class="form-control" id="memberEmail" placeholder="">
-                        </div>
+                </div>
+                <!-- 帳號 -->
+                <div class="form-group row mb-2 mb-md-6">
+                    <label class="col-12 col-md-3 col-form-label necessary" for="memberEmail">註冊信箱</label>
+                    <div class="col-12 col-md-9">
+                        <input type="text" class="form-control border-accent" id="memberEmail" placeholder="">
                     </div>
-                    <!-- 姓名 -->
-                    <div class="form-group row mb-3 mb-md-6">
-                        <label class="col-12 col-md-3 col-form-label necessary" for="memberName">會員姓名</label>
-                        <div class="col-12 col-md-9">
-                            <input type="text" class="form-control" id="memberName" placeholder="">
-                        </div>
+                </div>
+                <!-- 姓名 -->
+                <div class="form-group row mb-2 mb-md-6">
+                    <label class="col-12 col-md-3 col-form-label necessary" for="memberName">會員姓名</label>
+                    <div class="col-12 col-md-9">
+                        <input type="text" class="form-control border-accent" id="memberName" placeholder="">
                     </div>
-                    <!-- 手機 -->
-                    <div class="form-group row mb-3 mb-md-6">
-                        <label class="col-12 col-md-3 col-form-label necessary" for="memberPhone">手機號碼</label>
-                        <div class="col-12 col-md-9">
-                            <input type="text" class="form-control" id="memberPhone" placeholder="">
-                        </div>
+                </div>
+                <!-- 手機 -->
+                <div class="form-group row mb-2 mb-md-6">
+                    <label class="col-12 col-md-3 col-form-label necessary" for="memberPhone">手機號碼</label>
+                    <div class="col-12 col-md-9">
+                        <input type="text" class="form-control border-accent" id="memberPhone" placeholder="">
                     </div>
-                    <!-- 密碼 -->
-                    <div class="form-group row mb-3 mb-md-6">
-                        <label class="col-12 col-md-3 col-form-label necessary" for="memberPassword">請輸入密碼</label>
-                        <div class="col-12 col-md-9">
-                            <input type="password" class="form-control" id="memberPassword" placeholder="">
-                        </div>
+                </div>
+                <!-- 密碼 -->
+                <div class="form-group row mb-2 mb-md-6">
+                    <label class="col-12 col-md-3 col-form-label necessary" for="memberPassword">請輸入密碼</label>
+                    <div class="col-12 col-md-9">
+                        <input type="password" class="form-control border-accent" id="memberPassword" placeholder="">
                     </div>
-                    <div class="form-group row mb-3 mb-md-6">
-                        <label class="col-12 col-md-3 col-form-label necessary" for="memberPassword">請再次輸入密碼</label>
-                        <div class="col-12 col-md-9">
-                            <input type="password" class="form-control" id="memberPassword" placeholder="">
-                        </div>
+                </div>
+                <div class="form-group row mb-2 mb-md-6">
+                    <label class="col-12 col-md-3 col-form-label necessary" for="memberPassword">請再次輸入密碼</label>
+                    <div class="col-12 col-md-9">
+                        <input type="password" class="form-control border-accent" id="memberPassword" placeholder="">
                     </div>
-                    <!-- 收件人住址 -->
-                    <div class="form-group row mb-3 mb-md-6">
-                        <label class="col-12 col-md-3 col-form-label necessary" for="memberAddress">收件人住址</label>
-                        <div class="col-4 col-md-2 pr-0">
-                            <input type="text" class="form-control" id="memberCode" placeholder="">
-                        </div>
-                        <div class="col-8 col-md-7">
-                            <input type="text" class="form-control" id="memberAddress" placeholder="">
-                        </div>
+                </div>
+                <!-- 收件人住址 -->
+                <div class="form-group row mb-2 mb-md-6">
+                    <label class="col-12 col-md-3 col-form-label necessary" for="memberAddress">收件人住址</label>
+                    <div class="col-4 col-md-2 pr-0">
+                        <input type="text" class="form-control border-accent" id="memberCode" placeholder="">
                     </div>
-                    <!-- 驗證碼 -->
-                    <div class="form-group row mb-3 mb-md-6">
-                        <label class="col-12 col-md-3 col-form-label necessary" for="memberVerification">請輸入驗證碼</label>
-                        <div class="col-12 col-md-9">
-                            <input type="text" class="form-control" id="memberVerification" placeholder="">
-                        </div>
+                    <div class="col-8 col-md-7">
+                        <input type="text" class="form-control border-accent" id="memberAddress" placeholder="">
                     </div>
-                    <!-- 送出按紐 -->
-                    <div class="form-group row mb-6 mb-md-8">
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-primary btn-lg border-radius-l w-100"><span class="small">確認送出</span></button>
-                        </div>
+                </div>
+                <!-- 驗證碼 -->
+                <div class="form-group row mb-2 mb-md-6">
+                    <label class="col-12 col-md-3 col-form-label necessary" for="memberVerification">請輸入驗證碼</label>
+                    <div class="col-12 col-md-9">
+                        <input type="text" class="form-control border-accent" id="memberVerification" placeholder="">
                     </div>
-                </form>
-            </div>
+                </div>
+                <!-- 送出按紐 -->
+                <div class="form-group row mb-6 mb-md-8">
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-hover-primary text-white btn-lg border-radius-l w-100"><span class="small">確認送出</span></button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </section>

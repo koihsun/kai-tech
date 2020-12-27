@@ -9,23 +9,23 @@ current: buycourse-page
     <h2 class="content" data-title="購買課程"></h2>
 </article>
 <!-- 麵包屑 -->
-<section class="container my-4">
+<section class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
             <li class="breadcrumb-item"><a href="buycourse-list.html">司法特考</a></li>
             <li class="breadcrumb-item"><a href="buycourse-list-2.html">三等司法官</a></li>
-            <li class="breadcrumb-item active"><a href="buycourse-page.html">限時爭點班</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="buycourse-page.html">限時爭點班</a></li>
         </ol>
     </nav>
 </section>
 <!-- 主要內容 -->
-<section class="buycourse pb-3 pb-md-8">
+<section class="buycourse pb-8">
     <div class="container">
         <div class="h3 mb-3">2020 司律全修A班證交法</div>
         <div class="row">
             <!-- 影片 -->
             <div class="col-12 col-md-8">
-                <div class="bg-outer border-radius-m border-shadow">
+                <div class="bg-outer rounded border-shadow">
                     <div class="videoWrapper videoWrapper100 js-videoWrapper">
                         <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/qDO1twqS9eg?rel=0&controls=1&enablejsapi=1&origin=http%3A%2F%2Fkai-tech.com.tw&widgetid=3"></iframe>
                         <button class="videoPoster js-videoPoster" style="background-image:url(assets/images/video.png);background: #000;">Play video</button>
@@ -33,23 +33,35 @@ current: buycourse-page
                 </div>
             </div>
             <!-- 價格資訊 -->
-            <div class="col-12 col-md-4">
-                <div class="cs-price d-flex flex-column h-100">
-                    <!-- 原價 -->
-                    <div class="price-title my-3 mt-md-0">38000元</div>
-                    <!-- 特價 -->
-                    <div class="price-title offer my-3 mt-md-0">38000元</div>
-                    <div class="price-card border-radius-m border-shadow bg-light p-3 p-lg-6">
-                        <p class="origin mb-2 mb-lg-3">原價：52000元</p>
-                        <p class="mb-2 mb-lg-3">觀看期限：2020/11/01-2021/12/21</p>
-                        <p class="mb-2 mb-lg-3">科目：憲法、司法</p>
-                        <p class="mb-2 mb-lg-3">課堂數：33堂</p>
-                        <a href="#" class="btn btn-cart bg-primary text-white py-3">加入購物車</a>
+            <div class="col-md-4 cs-price d-flex flex-column justify-content-between">
+                <!-- 特價 -->
+                <div class="price-title offer my-3 mt-md-0">38000元</div>
+                <div class="cs-table d-block justify-self-stretch flex-full p-3 mb-auto bg-light border-shadow" data-style="7">
+                    <dl>
+                        <dt>原價：</dt>
+                        <dd><span class="origin">52000</span>元</dd>
+                    </dl>
+                    <dl>
+                        <dt>觀看期限：</dt>
+                        <dd>2020/11/01 - 2020/11/31</dd>
+                    </dl>
+                    <dl>
+                        <dt>科目：</dt>
+                        <dd>憲法、司法</dd>
+                    </dl>
+                    <dl>
+                        <dt>科目：</dt>
+                        <dd><span class="">33</span>堂</dd>
+                    </dl>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="" class="btn btn-primary w-100 py-2 py-md-3">加入購物車</a>
                     </div>
                 </div>
-            </div>
+            </div> 
             <!-- 課程相關資訊 -->
-            <article class="cs-nav col-12 mt-6 mt-lg-8" data-style="1">
+            <article class="cs-nav col-12 mt-6 mt-lg-8" data-style="2">
                 <ul class="nav nav-pills nav__bar" id="pills-tab" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">課程介紹</a>
@@ -64,7 +76,7 @@ current: buycourse-page
                   <div class="tab-content nav__content" id="pills-tabContent">
                       <!-- 課程介紹 -->
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="col-10 mx-auto py-5 py-md-8">
+                        <div class="p-4 p-md-8">
                             <p>2020司特四等書記官總複習</p>
                             <p>隨著考試時間逼近，是不是常常擔心自己遺漏了什麼重點呢？又或者怕被預料外的題目突襲呢？ 老師針對司律考試，替考生做最完整、最精準的總複習！讓考生快速掌握命題重點，以最短的時間、最少的痛苦，達到最有效率的學習！ 課程觀看期限：2021年10月31日</p>
                             <img class="w-100 mt-6 mt-md-9 pt-md-1" src="/assets/images/2020-11-15-01-07-45.jpg" alt="">    
@@ -72,77 +84,62 @@ current: buycourse-page
                     </div>
                     <!-- 課程明細 -->
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="col-10 mx-auto py-5 py-md-8">
-                            <ul class="cs-sidebar cs-table" data-style="2">
+                        <div class="cs-side p-3 p-md-6" data-style="2">
+                            <ul class="cs-table bg-light" data-style="9">
+                                <!-- 標題 -->
+                                <li class="course__head">
+                                    <div class="course__head-td">科目</div>
+                                    <div class="course__head-td">堂數</div>
+                                    <div class="course__head-td"></div>
+                                </li>
+                                <!-- 購買商品項1 -->
                                 <li class="side__box active">
                                     <div class="side__title">
-                                        <div class="table__head">
-                                            <div class="table__head-td font-weight-normal">民法概要</div>
-                                            <div class="table__head-td font-weight-normal">共4堂</div>
-                                            <div class="table__head-td"><i class="fa fa-chevron-down icon-icon_arrow" aria-hidden="true"></i></div>
+                                        <div class="course__item px-4">
+                                            <div class="course__item-td course__item--subject">民法概要</div>
+                                            <div class="course__item-td course__item--class">共 4 堂</div>
+                                            <div class="course__item-td course__item--icon"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i></div>
                                         </div>
                                     </div>
-                                    <div class="side__content">
-                                        <div class="table__head">
-                                            <div class="table__head-td">科目</div>
+                                    <!-- 購買商品介紹 -->
+                                    <div class="side__content cs-table" data-style="10">
+                                        <div class="table__head px-6 px-3">
                                             <div class="table__head-td">名稱</div>
-                                            <div class="table__head-td">師資</div>
+                                            <div class="table__head-td">講師</div>
                                         </div>
-                                        <div class="table__item">
-                                            <div class="table__item-td">民法概要</div>
+                                        <div class="table__item px-6 px-3">
                                             <div class="table__item-td">2020司特四等書記官總複習 01</div>
                                             <div class="table__item-td">常陽</div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="side__box">
+                                <!-- 購買商品項2 -->
+                                <li class="side__box active">
                                     <div class="side__title">
-                                        <div class="table__head">
-                                            <div class="table__head-td font-weight-normal">刑法概要</div>
-                                            <div class="table__head-td font-weight-normal">共3堂</div>
-                                            <div class="table__head-td"><i class="fa fa-chevron-down icon-icon_arrow" aria-hidden="true"></i></div>
+                                        <div class="course__item px-4">
+                                            <div class="course__item-td course__item--subject">民法概要</div>
+                                            <div class="course__item-td course__item--class">共 4 堂</div>
+                                            <div class="course__item-td course__item--icon"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i></div>
                                         </div>
                                     </div>
-                                    <div class="side__content">
-                                        <div class="table__head">
-                                            <div class="table__head-td">科目</div>
+                                    <!-- 購買商品介紹 -->
+                                    <div class="side__content cs-table" data-style="10">
+                                        <div class="table__head px-6 px-3">
                                             <div class="table__head-td">名稱</div>
-                                            <div class="table__head-td">師資</div>
+                                            <div class="table__head-td">講師</div>
                                         </div>
-                                        <div class="table__item">
-                                            <div class="table__item-td">刑法概要</div>
-                                            <div class="table__item-td">...</div>
-                                            <div class="table__item-td">...</div>
+                                        <div class="table__item px-6 px-3">
+                                            <div class="table__item-td">2020司特四等書記官總複習 01</div>
+                                            <div class="table__item-td">常陽</div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="side__box">
-                                    <div class="side__title">
-                                        <div class="table__head">
-                                            <div class="table__head-td font-weight-normal">行政法概要</div>
-                                            <div class="table__head-td font-weight-normal">共4堂</div>
-                                            <div class="table__head-td"><i class="fa fa-chevron-down icon-icon_arrow" aria-hidden="true"></i></div>
-                                        </div>
-                                    </div>
-                                    <div class="side__content">
-                                        <div class="table__head">
-                                            <div class="table__head-td">科目</div>
-                                            <div class="table__head-td">名稱</div>
-                                            <div class="table__head-td">師資</div>
-                                        </div>
-                                        <div class="table__item">
-                                            <div class="table__item-td">行政法概要</div>
-                                            <div class="table__item-td">...</div>
-                                            <div class="table__item-td">...</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul> 
+                            </ul>
                         </div>
                     </div>
                     <!-- 購物流程 -->
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="col-10 mx-auto py-5 py-md-8">
+                        <div class="p-4 p-md-8">
                             <p>結帳付款</p>
                             <p>1.計價方式：本站交易計價幣別為新台幣。</p>
                             <p>2.結帳方式：本站提供下述四種付款方式進行結帳：信用卡一次付清、網路ATM、便利商店繳費、(ibon、FamiPort)。</p>

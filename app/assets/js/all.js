@@ -26,6 +26,21 @@ $(document).ready(function(){
     $('#btn-search').click(function(){
         $('#search-box').toggleClass('open');
     });
+
+    //side
+    $('.cs-side .side__title').click(function(){
+        $(this).parent().toggleClass("active");
+    });
+
+    //select
+    $('.cs-select .select__option').each( function() {
+        var $this = $(this);
+        $this.on( 'click', function() {
+            $('.cs-select').find('.active').removeClass('active');
+            $( this ).addClass('active');
+            $('#dropdownCourse').text($( this ).text());
+        });
+    });
 });
 
 //swiper
@@ -48,18 +63,6 @@ var swiper = new Swiper('#banner', {
 var swiper2 = new Swiper('#hot', {
     spaceBetween: 0,
     centeredSlides: true,
-    /* autoplay: {
-        delay: 50000,
-        disableOnInteraction: false,
-    }, */
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
     breakpoints: { 
         320: {  //当屏幕宽度大于等于320
             noSwiping : false,
@@ -72,7 +75,7 @@ var swiper2 = new Swiper('#hot', {
     }
 });
 
-//video
+//video madal
 var $videoSrc;  
 $('.video-btn').click(function() {
     $videoSrc = $(this).data( "src" );
@@ -81,7 +84,6 @@ $('.video-btn').click(function() {
 
 // when the modal is opened autoplay it  
 $('#videoModal').on('shown.bs.modal', function (e) {
-    
     // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
     $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" );
 })
@@ -92,58 +94,7 @@ $('#videoModal').on('hide.bs.modal', function (e) {
     $("#video").attr('src',$videoSrc); 
 })
 
-//isotope
-var $grid = $('#filter-list').isotope({
-    layoutMode: 'vertical',
-    itemSelector: '#filter-list > li',
-    hiddenStyle: {
-        opacity: 0,
-        transform: 'scale(1)'
-    },
-    visibleStyle: {
-        opacity: 1,
-        transform: 'scale(1)'
-    }
-});  	
-function filterList(value) {
-    var value = $("#filter-list").find("li[data-filter-class*=" + value + "]");
-    return value;
-}
-$('#filter-bar > li').on('click', function() {
-    var filterValue = $( this ).attr('data-filter');
-    $grid.isotope({
-    filter: filterList(filterValue)
-    });
-});
-$('#filter-bar > li').each( function() {
-    var $this = $(this);
-    $this.on( 'click', function() {
-    $('#filter-bar').find('.active').removeClass('active');
-    $( this ).addClass('active');
-    });
-});
-
-//sidebar
-$('.cs-sidebar[data-style="1"] .sidebar__title').click(function(){
-    $(this).parent().toggleClass("active");
-});
-$('.cs-sidebar[data-style="2"] .side__title').click(function(){
-    $(this).parent().toggleClass("active");
-});
-
-
-//select
-$('.cs-select .select__option').each( function() {
-    var $this = $(this);
-    $this.on( 'click', function() {
-        $('.cs-select').find('.active').removeClass('active');
-        $( this ).addClass('active');
-        console.log($( this ).text());
-        $('#dropdownCourse').text($( this ).text());
-    });
-});
-
-//video
+//video wrapper
 // poster frame click event
 $(document).on('click','.js-videoPoster',function(ev) {
     ev.preventDefault();
@@ -178,9 +129,33 @@ function videoStop($wrapper) {
     $iframe.attr('src','');
 }
 
-
-$('.question__item').click(function(){
-
-    $(this).children('.question__answer').slideToggle()
-    $(this).toggleClass('show');
+//isotope
+var $grid = $('#filter-list').isotope({
+    layoutMode: 'vertical',
+    itemSelector: '#filter-list [data-filter-class]',
+    hiddenStyle: {
+        opacity: 0,
+        transform: 'scale(1)'
+    },
+    visibleStyle: {
+        opacity: 1,
+        transform: 'scale(1)'
+    }
+});  	
+function filterList(value) {
+    var value = $("#filter-list").find("[data-filter-class*=" + value + "]");
+    return value;
+}
+$('#filter-bar [data-filter]').on('click', function() {
+    var filterValue = $( this ).attr('data-filter');
+    $grid.isotope({
+        filter: filterList(filterValue)
+    });
+});
+$('#filter-bar [data-filter-class]').each( function() {
+    var $this = $(this);
+    $this.on( 'click', function() {
+        $('#filter-bar').find('.active').removeClass('active');
+        $( this ).addClass('active');
+    });
 });

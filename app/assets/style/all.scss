@@ -19,13 +19,12 @@
 @import "components/footer";
 @import "components/search";
 @import "components/title";
-@import "components/isotope";
 @import "components/gotop";
 @import "components/form";
 @import "components/bgimage";
 @import "components/breadcrumb";
 @import "components/card";
-@import "components/sidebar";
+@import "components/side";
 @import "components/select";
 @import "components/video";
 @import "components/table";
@@ -37,10 +36,5 @@
 //layout
 @import "layout/index";
 @import "layout/buycourse";
-
-@import "page/_payorder";
-@import "page/team";
-@import "page/guide";
-@import "page/news";
-@import "page/gotoclass";
-@import "page/booking";
+@import "layout/team";
+@import "layout/gotoclass";

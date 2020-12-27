@@ -69,3 +69,68 @@
         border-bottom: 2px solid #fff;
     }
 }
+//order-step1
+.cs-form[data-style="3"] {
+    input {
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        background-color: #ecf1f1;
+        border: transparent;
+        @include media-breakpoint-up(md) {
+            width: 324px;
+        }
+    }
+
+    .discount .delete {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        height: 40px;
+        padding: 0;
+        font-size: 25px;
+        color: $red;
+        background: none;
+        border-radius: 0;
+        border: none;
+        transition: .3s;
+        &:hover {
+            color: $accent;
+        }
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+    input[type=checkbox] ~ label {
+        position: relative;
+        cursor: pointer;
+        flex: 1 0 auto;
+    }
+    input[type=checkbox] ~ label::before {
+        content: "";
+        display: inline-block;
+        background-color: transparent;
+        width: 24px;
+        height: 24px;
+        border: 2px solid $primary;
+        border-radius: 100%;
+        vertical-align: middle;
+        margin-right: 0.25rem;
+    }
+    input[type=checkbox]:checked ~ label::before {
+        background-color: $primary;
+    }
+    input[type=checkbox]:checked ~ label::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 0;
+        width: 9px;
+        height: 19px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+}

@@ -28,6 +28,7 @@
     &__card {
         flex-direction: row;
         align-items: stretch;
+        cursor: pointer;
         @include media-breakpoint-up(md) {
             flex-direction: column;
             align-items: initial;
@@ -100,5 +101,20 @@
     }
     &__content {
         color: $black;
+    }
+    .card-title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .card-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        height: 48px;
     }
 }

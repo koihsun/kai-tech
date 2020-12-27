@@ -1,8 +1,5 @@
 //外框弧度
-.border-radius-m {
-    border-radius: 10px;
-}
-.border-radius-l {
+.rounded-xl {
     border-radius: 50px;
 }
 .border-shadow {
@@ -17,13 +14,21 @@
         border-color: $primary;
     }
 }
-//按鈕顏色
 .btn-hover-accent {
     background-color: $primary;
     border-color: $primary;
     &:hover {
         background-color: $accent;
         border-color: $accent;
+    }
+}
+.btn-hover-secondary {
+    background-color: rgba(236, 241, 241, 0.9);
+    border-color: rgba(236, 241, 241, 0.9);
+    &:hover {
+        background-color: $secondary;
+        border-color: $secondary;
+        color: $white;
     }
 }
 .btn-hover-shadow {
@@ -83,7 +88,7 @@
 .card-shadow {
     overflow: hidden;
     border-radius: 1.25rem;
-    box-shadow: 0 2px 10px 0 rgba(93, 93, 93, 0.5) !important;
+    box-shadow: 0 2px 5px 0 rgba(93, 93, 93, 0.5) !important;
 }
 .card-hover-move {
     transform: translateY(0);
@@ -110,4 +115,16 @@
 //原價刪除線
 .origin {
     text-decoration: line-through;
+}
+//多行文字超出時自動隱藏，並出現…
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+//
+.flex-full {
+    flex: 1 1 100%;
 }

@@ -1,0 +1,186 @@
+---
+title: 上課去內頁
+layout: ./app/layout.ejs
+engine: ejs
+current: gotoclass_page
+---
+<!-- 標題 -->
+<article class="cs-title mb-4" data-style="2">
+    <h2 class="content" data-title="上課去"></h2>
+</article>
+<!-- 麵包屑 -->
+<section class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb cs-breadcrumb bg-white align-items-center px-0">
+            <li class="breadcrumb-item"><a href="#">上課去</a></li>
+            <li class="breadcrumb-item active" aria-current="page">司律全修A班證交法</li>
+        </ol>
+    </nav>
+</section>
+<section class="container pb-8">
+    <div class="row">
+        <!-- 課程影片 -->
+        <div class="col-12 col-md-8 pr-md-0 mb-5 mb-md-0">
+            <h3 class="bg-accent text-center text-white py-2 py-md-3">2020 司律全修A班證交法</h3>
+            <div class="bg-outer border-shadow">
+                <div class="videoWrapper videoWrapper100 js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/qDO1twqS9eg?rel=0&controls=1&enablejsapi=1&origin=http%3A%2F%2Fkai-tech.com.tw&widgetid=3"></iframe>
+                    <button class="videoPoster js-videoPoster" style="background-image:url(assets/images/video.png);background: #000;">Play video</button>
+                </div>
+            </div>
+        </div>
+        <!-- 課程觀看列表 -->
+        <div class="col-md-4 d-flex flex-column justify-content-between pl-md-0">
+            <h5 class="gotoclass-title bg-light text-center py-2 py-md-3">課程觀看列表</h5>
+            <ul class="gotolist cs-side justify-self-stretch flex-full bg-light border-shadow" data-style="2">
+                <li class="side__box">
+                    <div class="gotolist__head side__title">
+                        <div class="gotolist__head-td"><i class="fa fa-th pr-2" aria-hidden="true"></i>民法概要</div>
+                        <div class="gotolist__head-td">4堂</div>
+                        <div class="gotolist__head-td"><i class="fa fa-chevron-up icon-icon_arrow" aria-hidden="true"></i></div>
+                    </div>
+                    <ul class="gotolist__content side__content">
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                    </ul>
+                </li>
+                <li class="side__box">
+                    <div class="gotolist__head side__title">
+                        <div class="gotolist__head-td"><i class="fa fa-th pr-2" aria-hidden="true"></i>行政法概要</div>
+                        <div class="gotolist__head-td">4堂</div>
+                        <div class="gotolist__head-td"><i class="fa fa-chevron-up icon-icon_arrow" aria-hidden="true"></i></div>
+                    </div>
+                    <ul class="gotolist__content side__content">
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                    </ul>
+                </li>
+                <li class="side__box">
+                    <div class="gotolist__head side__title">
+                        <div class="gotolist__head-td"><i class="fa fa-th pr-2" aria-hidden="true"></i>行政法概要</div>
+                        <div class="gotolist__head-td">4堂</div>
+                        <div class="gotolist__head-td"><i class="fa fa-chevron-up icon-icon_arrow" aria-hidden="true"></i></div>
+                    </div>
+                    <ul class="gotolist__content side__content">
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                        <li><a href="">司特四等書記官總複習 01 (常陽)</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-6 pr-0">
+                    <a href="" class="btn btn-secondary text-white border-right rounded-0 w-100 py-2">講義下載</a>
+                </div>
+                <div class="col-6 pl-0">
+                    <a href="" class="btn btn-secondary text-white rounded-0 w-100 py-2">筆記下載</a>
+                </div>
+            </div>
+        </div>
+        <!-- 課程相關資訊 -->
+        <article class="cs-nav col-12 mt-6 mt-lg-8" data-style="2">
+            <ul class="nav nav-pills nav__bar" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">課程明細</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">課程介紹</a>
+                </li>
+            </ul>
+            <div class="tab-content nav__content" id="pills-tabContent">
+                <!-- 課程明細 -->
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="cs-side p-3 p-md-6" data-style="2">
+                        <ul class="cs-table bg-light" data-style="9">
+                            <!-- 標題 -->
+                            <li class="course__head">
+                                <div class="course__head-td">科目</div>
+                                <div class="course__head-td">堂數</div>
+                                <div class="course__head-td"></div>
+                            </li>
+                            <!-- 購買商品項1 -->
+                            <li class="side__box active">
+                                <div class="side__title">
+                                    <div class="course__item px-4">
+                                        <div class="course__item-td course__item--subject">民法概要</div>
+                                        <div class="course__item-td course__item--class">共 4 堂</div>
+                                        <div class="course__item-td course__item--icon"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                                <!-- 購買商品介紹 -->
+                                <div class="side__content cs-table" data-style="10">
+                                    <div class="table__head px-3">
+                                        <div class="table__head-td">名稱</div>
+                                        <div class="table__head-td">講師</div>
+                                        <div class="table__head-td">講義</div>
+                                        <div class="table__head-td">筆記</div>
+                                    </div>
+                                    <div class="table__item px-3">
+                                        <div class="table__item-td">2020司特四等書記官總複習 01</div>
+                                        <div class="table__item-td">常陽</div>
+                                        <div class="table__item-td">
+                                            <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="table__item-td">
+                                            <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="table__item px-3">
+                                        <div class="table__item-td">2020司特四等書記官總複習 01</div>
+                                        <div class="table__item-td">常陽</div>
+                                        <div class="table__item-td">
+                                            <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="table__item-td">
+                                            <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 購買商品項2 -->
+                            <li class="side__box active">
+                                <div class="side__title">
+                                    <div class="course__item px-4">
+                                        <div class="course__item-td course__item--subject">民法概要</div>
+                                        <div class="course__item-td course__item--class">共 4 堂</div>
+                                        <div class="course__item-td course__item--icon"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                                <!-- 購買商品介紹 -->
+                                <div class="side__content cs-table" data-style="10">
+                                    <div class="table__head px-3">
+                                        <div class="table__head-td">名稱</div>
+                                        <div class="table__head-td">講師</div>
+                                        <div class="table__head-td">講義</div>
+                                        <div class="table__head-td">筆記</div>
+                                    </div>
+                                    <div class="table__item px-3">
+                                        <div class="table__item-td">2020司特四等書記官總複習 01</div>
+                                        <div class="table__item-td">常陽</div>
+                                        <div class="table__item-td">
+                                            <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                        <div class="table__item-td">
+                                            <a href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 課程介紹 -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="p-4 p-md-8">
+                        <p>2020司特四等書記官總複習</p>
+                        <p>隨著考試時間逼近，是不是常常擔心自己遺漏了什麼重點呢？又或者怕被預料外的題目突襲呢？ 老師針對司律考試，替考生做最完整、最精準的總複習！讓考生快速掌握命題重點，以最短的時間、最少的痛苦，達到最有效率的學習！ 課程觀看期限：2021年10月31日</p>
+                        <img class="w-100 mt-6 mt-md-9 pt-md-1" src="/assets/images/2020-11-15-01-07-45.jpg" alt="">    
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
