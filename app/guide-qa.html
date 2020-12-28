@@ -20,11 +20,14 @@ current: guide-qa
 <section class="container pb-8">
     <div class="row">
         <aside class="col-12 col-md-2 cs-nav" data-style="3">
-            <nav class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link fa active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">新手上路</a>
-                <a class="nav-link fa" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">購買課程Q&A</a>
-                <a class="nav-link fa" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">課程影片</a>
-            </nav>
+            <div class="dropdown cs-select mb-6" data-style="1">
+                <a class="btn dropdown-toggle d-md-none select__btn d-md-none" href="#" role="button" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">新手上路</a>
+                <nav class="dropdown-menu nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" aria-labelledby="dropdown">
+                    <a class="dropdown-item nav-link fa" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">新手上路</a>
+                    <a class="dropdown-item nav-link fa" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">購買課程Q&A</a>
+                    <a class="dropdown-item nav-link fa" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">課程影片</a>
+                </nav>
+            </div>
         </aside>
         <div class="col-12 col-md-10">
             <div class="tab-content" id="v-pills-tabContent">

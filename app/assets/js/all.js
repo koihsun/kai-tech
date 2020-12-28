@@ -38,7 +38,14 @@ $(document).ready(function(){
         $this.on( 'click', function() {
             $('.cs-select').find('.active').removeClass('active');
             $( this ).addClass('active');
-            $('#dropdownCourse').text($( this ).text());
+            $('#dropdown').text($( this ).text());
+        });
+    });
+    //select - Q&A
+    $('.cs-select .dropdown-item').each( function() {
+        var $this = $(this);
+        $this.on( 'click', function() {
+            $('#dropdown').text($( this ).text());
         });
     });
 });
@@ -152,7 +159,7 @@ $('#filter-bar [data-filter]').on('click', function() {
         filter: filterList(filterValue)
     });
 });
-$('#filter-bar [data-filter-class]').each( function() {
+$('#filter-bar [data-filter]').each( function() {
     var $this = $(this);
     $this.on( 'click', function() {
         $('#filter-bar').find('.active').removeClass('active');

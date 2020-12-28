@@ -79,15 +79,30 @@
 }
 //最新消息, Q&A
 .cs-nav[data-style="3"] {
+    .nav {
+        @include media-breakpoint-down(sm) {
+            display: none;
+            border: 1px solid #ccc;
+            &.show {
+                display: block;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            border: none;
+        }
+    }
+
     .nav-link {
         color: #bebebe;
         position: relative;
         margin-bottom: 1rem;
         cursor: pointer;
-        &::after {
-            content: "\f0da";
-            position: absolute;
-            right: 0;
+        @include media-breakpoint-up(md) {
+            &::after {
+                content: "\f0da";
+                position: absolute;
+                right: 0;
+            }
         }
     }
     .nav-link.active {
