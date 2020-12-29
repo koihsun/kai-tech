@@ -72,6 +72,18 @@
         width: auto;
         padding-top: 1rem;
     }
+    &__card {
+        @include media-breakpoint-down(sm) {
+            margin-right: -40px;
+        }
+        @include media-breakpoint-up(md) {
+            transform: translateY(0);
+            transition: transform .6s;
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
     &__img{
         position: relative;
         > div{

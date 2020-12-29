@@ -15461,6 +15461,25 @@ button.swiper-pagination-bullet {
   width: auto;
   padding-top: 1rem; }
 
+@media (max-width: 767.98px) {
+  .hot__card {
+    margin-right: -40px; } }
+
+@media (min-width: 768px) {
+  .hot__card {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: -webkit-transform .6s;
+    transition: -webkit-transform .6s;
+    -o-transition: transform .6s;
+    transition: transform .6s;
+    transition: transform .6s, -webkit-transform .6s; }
+    .hot__card:hover {
+      -webkit-transform: translateY(-10px);
+          -ms-transform: translateY(-10px);
+              transform: translateY(-10px); } }
+
 .hot__img {
   position: relative; }
   .hot__img > div {

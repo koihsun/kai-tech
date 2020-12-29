@@ -61,21 +61,23 @@ var swiper = new Swiper('#banner', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    }
 });
 var swiper2 = new Swiper('#hot', {
     spaceBetween: 0,
     centeredSlides: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     breakpoints: { 
         320: {  //当屏幕宽度大于等于320
+            loop : true,
             noSwiping : false,
             autoplay: true
         },
-        1280: {  //当屏幕宽度大于等于1280
+        980: {  //当屏幕宽度大于等于1280
+            loop : false,
             noSwiping : true,
             autoplay: false
         }
