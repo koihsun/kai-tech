@@ -83,8 +83,9 @@
                         <li class="ml-md-3 ml-lg-6">
                             <form class="search__form d-none d-lg-block">
                                 <input type="search" value="" placeholder="課程搜尋" class="search__input" id="h-search">
-                                <button type="submit" class="search__button"><i class="fa fa-search text-muted" aria-hidden="true"></i></svg>
-                                </button>
+                                <a class="search__button" href="search-result.html"><i class="fa fa-search text-muted" aria-hidden="true"></i></a>
+                                <!-- <button type="submit" class="search__button"><i class="fa fa-search text-muted" aria-hidden="true"></i></svg>
+                                </button> -->
                             </form>
                         </li>
                     </ul>
@@ -138,20 +139,9 @@
     <form class="search__form search__form--mobile d-md-none" id="search-box">
         <div>
             <input type="search" value="" placeholder="課程搜尋" class="search__input" id="h-search">
-            <button type="submit" class="search__button">
-                <svg class="submit-button">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
-                </svg>
-            </button>
+            <a class="search__button" href="search-result.html"><i class="fa fa-search text-muted" aria-hidden="true"></i></a>
         </div>
     </form>
-    <!-- 搜尋符號 -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
-        <symbol id="search" viewBox="0 0 32 32">
-        <path d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
-        </symbol>
-    </svg>
-    <!-- 搜尋符號 -->
 </header>
 
     <main class="mb-auto">
@@ -171,12 +161,12 @@
 </div>
 <section class="pb-8">
     <div class="container">
-        <!-- 明細收縮按鈕(手機板) -->
-        <a class="btn btn-light w-100 px-3 text-left d-lg-none d-flex justify-content-between align-items-center rounded-0" data-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false" aria-controls="collapseInfo">
-            訂購明細<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        <a class="btn w-100 text-left d-flex justify-content-between align-items-center rounded-0" data-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false" aria-controls="collapseInfo">
+            <span>訂購明細</span><i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
         <!-- 訂購明細 -->
-        <div class="cs-side collapse show mb-3" id="collapseInfo" data-style="2">
-            <ul class="cs-table bg-light p-3 p-md-6" data-style="6">
+        <div class="cs-side collapse show mb-3 mb-md-8" id="collapseInfo" data-style="2">
+            <ul class="cs-table step1" data-style="6">
                 <!-- 標題 -->
                 <li class="order__head">
                     <div class="order__head-td">課程</div>
@@ -188,7 +178,7 @@
                 <!-- 購買商品項1 -->
                 <li class="side__box active">
                     <div class="side__title">
-                        <div class="order__item px-4">
+                        <div class="order__item">
                             <div class="order__item-td"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i><span class="font-weight-bold">2020司律全修A班證交法</span></div>
                             <div class="order__item-td order__item--class">30</div>
                             <div class="order__item-td order__item--origin"><span class="origin">52800</span></div>
@@ -198,12 +188,12 @@
                     </div>
                     <!-- 購買商品介紹 -->
                     <div class="side__content cs-table" data-style="2">
-                        <div class="table__head px-6 pr-md-8">
+                        <div class="table__head px-6">
                             <div class="table__head-td">科目</div>
                             <div class="table__head-td">名稱</div>
                             <div class="table__head-td">師資</div>
                         </div>
-                        <div class="table__item px-6 pr-md-8">
+                        <div class="table__item px-6">
                             <div class="table__item-td">民法概要</div>
                             <div class="table__item-td">2020司特四等書記官總複習 01</div>
                             <div class="table__item-td">常陽</div>
@@ -213,7 +203,7 @@
                 <!-- 購買商品項2 -->
                 <li class="side__box active">
                     <div class="side__title">
-                        <div class="order__item px-4">
+                        <div class="order__item">
                             <div class="order__item-td"><i class="fa fa-chevron-down icon-icon_arrow mr-3" aria-hidden="true"></i><span class="font-weight-bold">2020司律全修A班證交法</span></div>
                             <div class="order__item-td order__item--class">30</div>
                             <div class="order__item-td order__item--origin"><span class="origin">52800</span></div>
@@ -223,12 +213,12 @@
                     </div>
                     <!-- 購買商品介紹 -->
                     <div class="side__content cs-table" data-style="2">
-                        <div class="table__head px-6 pr-md-8">
+                        <div class="table__head px-6">
                             <div class="table__head-td">科目</div>
                             <div class="table__head-td">名稱</div>
                             <div class="table__head-td">師資</div>
                         </div>
-                        <div class="table__item px-6 pr-md-8">
+                        <div class="table__item px-6">
                             <div class="table__item-td">民法概要</div>
                             <div class="table__item-td">2020司特四等書記官總複習 01</div>
                             <div class="table__item-td">常陽</div>

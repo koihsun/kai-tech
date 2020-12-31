@@ -21,22 +21,20 @@ current: order-step3
 <section class="pb-8">
     <div class="container">
         <!-- 購買車明細 -->
-        <div class="border-shadow mb-3 mb-md-8">
-            <!-- 明細收縮按鈕(手機板) -->
-            <a class="btn w-100 px-3 text-left d-lg-none d-flex justify-content-between align-items-center rounded-0" data-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false" aria-controls="collapseInfo">
-                訂購明細<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
-            <!-- 訂購明細 -->
-            <div class="collapse d-md-block p-3 p-md-6" id="collapseInfo">
-                <h4 class="mb-5 d-none d-md-block">訂購明細</h4>
-                <div class="cs-side border-bottom collapse show pb-3" data-style="2">
+        <div class="border-shadow p-3 px-md-6 mb-3 mb-md-8">
+            <a class="btn w-100 text-left d-flex justify-content-between align-items-center rounded-0" data-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false" aria-controls="collapseInfo">
+                <h4>訂購明細</h4><i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <div class="collapse show" id="collapseInfo">
+                <!-- 訂購明細 -->
+                <div class="cs-side border-bottom py-3 mb-3" data-style="2">
                     <ul class="cs-table" data-style="6">
                         <!-- 標題 -->
-                        <li class="order__head">
+                        <li class="order__head px-4">
                             <div class="order__head-td">課程</div>
                             <div class="order__head-td">總堂數</div>
                             <div class="order__head-td">原價</div>
                             <div class="order__head-td">特價</div>
-                            <div class="order__head-td">刪除</div>
                         </li>
                         <!-- 購買商品項1 -->
                         <li class="side__box active">
@@ -46,7 +44,6 @@ current: order-step3
                                     <div class="order__item-td order__item--class">30</div>
                                     <div class="order__item-td order__item--origin"><span class="origin">52800</span></div>
                                     <div class="order__item-td order__item--special">32800</div>
-                                    <div class="order__item-td"><a href="" class="btn"><i class="fa fa-trash fa-lg text-danger" aria-hidden="true"></i></a></div>
                                 </div>
                             </div>
                             <!-- 購買商品介紹 -->
@@ -71,7 +68,6 @@ current: order-step3
                                     <div class="order__item-td order__item--class">30</div>
                                     <div class="order__item-td order__item--origin"><span class="origin">52800</span></div>
                                     <div class="order__item-td order__item--special">32800</div>
-                                    <div class="order__item-td"><a href="" class="btn"><i class="fa fa-trash fa-lg text-danger" aria-hidden="true"></i></a></div>
                                 </div>
                             </div>
                             <!-- 購買商品介紹 -->

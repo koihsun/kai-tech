@@ -6,7 +6,7 @@ $(document).ready(function () {
     s = $(document).scrollTop();
     /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
 
-    if (s > 0) {
+    if (s > $('#header').outerHeight()) {
       $('#header').addClass('mini-nav');
       $('#gotop').fadeIn();
     } else {

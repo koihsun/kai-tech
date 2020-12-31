@@ -83,8 +83,9 @@
                         <li class="ml-md-3 ml-lg-6">
                             <form class="search__form d-none d-lg-block">
                                 <input type="search" value="" placeholder="課程搜尋" class="search__input" id="h-search">
-                                <button type="submit" class="search__button"><i class="fa fa-search text-muted" aria-hidden="true"></i></svg>
-                                </button>
+                                <a class="search__button" href="search-result.html"><i class="fa fa-search text-muted" aria-hidden="true"></i></a>
+                                <!-- <button type="submit" class="search__button"><i class="fa fa-search text-muted" aria-hidden="true"></i></svg>
+                                </button> -->
                             </form>
                         </li>
                     </ul>
@@ -138,20 +139,9 @@
     <form class="search__form search__form--mobile d-md-none" id="search-box">
         <div>
             <input type="search" value="" placeholder="課程搜尋" class="search__input" id="h-search">
-            <button type="submit" class="search__button">
-                <svg class="submit-button">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
-                </svg>
-            </button>
+            <a class="search__button" href="search-result.html"><i class="fa fa-search text-muted" aria-hidden="true"></i></a>
         </div>
     </form>
-    <!-- 搜尋符號 -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" display="none">
-        <symbol id="search" viewBox="0 0 32 32">
-        <path d="M 19.5 3 C 14.26514 3 10 7.2651394 10 12.5 C 10 14.749977 10.810825 16.807458 12.125 18.4375 L 3.28125 27.28125 L 4.71875 28.71875 L 13.5625 19.875 C 15.192542 21.189175 17.250023 22 19.5 22 C 24.73486 22 29 17.73486 29 12.5 C 29 7.2651394 24.73486 3 19.5 3 z M 19.5 5 C 23.65398 5 27 8.3460198 27 12.5 C 27 16.65398 23.65398 20 19.5 20 C 15.34602 20 12 16.65398 12 12.5 C 12 8.3460198 15.34602 5 19.5 5 z" />
-        </symbol>
-    </svg>
-    <!-- 搜尋符號 -->
 </header>
 
     <main class="mb-auto">
