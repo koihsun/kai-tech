@@ -11647,6 +11647,19 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%; }
 
+.icon-arrow {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.collapsed .icon-arrow {
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0); }
+
 /**
  * Swiper 6.3.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -14145,14 +14158,18 @@ button.swiper-pagination-bullet {
   background-color: #81c6d2;
   color: #fff;
   line-height: 1.75;
-  font-size: 1.2rem;
-  max-height: 4.25rem;
+  font-size: 1.5rem;
+  max-height: 5.25rem;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; }
+  @media (min-width: 768px) {
+    .cs-card[data-style="4"] .course__title {
+      font-size: 1.2rem;
+      max-height: 4.25rem; } }
 
 .cs-card[data-style="4"] .course__body {
   padding-top: .625rem;
