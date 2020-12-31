@@ -14176,16 +14176,11 @@ button.swiper-pagination-bullet {
   padding-bottom: .625rem; }
 
 .cs-card[data-style="4"] .course__price {
-  font-size: 0.75rem; }
-  @media (min-width: 768px) {
-    .cs-card[data-style="4"] .course__price {
-      font-size: 1rem; } }
+  font-size: 1rem; }
 
 .cs-card[data-style="4"] .course__sale {
-  color: #dc3545; }
-  @media (min-width: 768px) {
-    .cs-card[data-style="4"] .course__sale {
-      font-size: 1.25rem; } }
+  color: #dc3545;
+  font-size: 1.25rem; }
   .cs-card[data-style="4"] .course__sale i {
     color: #e6c017; }
 
