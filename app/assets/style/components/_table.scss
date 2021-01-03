@@ -458,6 +458,28 @@
 }
 //最新消息
 .cs-table[data-style="8"] {
+    .table__head {
+        display: none;
+        @include media-breakpoint-up(md) {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 1.25rem 2rem;
+            color: $black;
+            border-bottom: solid 0.5px $light;
+            justify-content: flex-start;
+            padding: 1.25rem 0;
+        }
+        &::before {
+            content: "";
+            width: 45px;
+            flex-basis: 45px;
+            margin-left: 1rem;
+            margin-right: 2rem;
+        }
+    }
+
     .table__item {
         width: 100%;
         transition: .3s;
@@ -513,7 +535,8 @@
                 background-image: url(../../assets/images/icon/icons-new.svg);
             }
         }
-
+    }
+    .table__head, .table__item{
         &--date {
             order: 2;
             @include media-breakpoint-up(md) {
