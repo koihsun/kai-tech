@@ -71,6 +71,12 @@
     .swiper-wrapper {
         width: auto;
         padding-top: 1rem;
+        @include media-breakpoint-up(md) {
+            transform: translate3d(0px, 0, 0) !important;
+        }
+    }
+    .swiper-button-disabled {
+        pointer-events: unset;
     }
     &__card {
         @include media-breakpoint-down(sm) {

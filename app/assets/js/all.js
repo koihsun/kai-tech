@@ -66,18 +66,17 @@ var swiper = new Swiper('#banner', {
 var swiper2 = new Swiper('#hot', {
     spaceBetween: 0,
     centeredSlides: true,
+    loop : false,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     breakpoints: { 
         320: {  //当屏幕宽度大于等于320
-            loop : true,
             noSwiping : false,
             autoplay: true
         },
         980: {  //当屏幕宽度大于等于1280
-            loop : false,
             noSwiping : true,
             autoplay: false
         }
