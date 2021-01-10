@@ -11660,6 +11660,9 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transform: rotate(0);
           transform: rotate(0); }
 
+.img-verify {
+  width: 100px; }
+
 /**
  * Swiper 6.3.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions

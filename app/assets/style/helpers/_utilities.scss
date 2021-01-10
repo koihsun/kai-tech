@@ -128,11 +128,15 @@
 .flex-full {
     flex: 1 1 100%;
 }
-//
+//箭頭轉向動畫
 .icon-arrow{
     transition: .3s;
     transform: rotate(180deg);
 }
 .collapsed  .icon-arrow{
     transform: rotate(0);
+}
+//固定驗證碼寬度
+.img-verify {
+    width: 100px;
 }

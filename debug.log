@@ -3,3 +3,4 @@
 [1227/000213.076:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系統找不到指定的路徑。 (0x3)
 [1227/081308.176:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
 [1227/085047.326:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
+[0103/213934.313:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系統找不到指定的路徑。 (0x3)
