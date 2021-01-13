@@ -13952,6 +13952,38 @@ button.swiper-pagination-bullet {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff; }
 
+.cs-form[data-style="2"] .el-input__input > input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #174e5f;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
+  .cs-form[data-style="2"] .el-input__input > input:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 150, 164, 0.25);
+            box-shadow: 0 0 0 0.2rem rgba(0, 150, 164, 0.25); }
+
+.cs-form[data-style="2"].login .el-input__input > input {
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem; }
+
+.cs-form[data-style="2"].order .el-input__input > input {
+  border: 1px solid #0096a4; }
+
 .cs-form[data-style="3"] input {
   width: 100%;
   height: 40px;
@@ -14015,6 +14047,16 @@ button.swiper-pagination-bullet {
   transform: rotate(45deg);
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff; }
+
+.cs-form .el-form-item.is-error .el-input__inner,
+.cs-form .el-form-item.is-error .el-textarea__inner,
+.cs-form .el-message-box__input input.invalid {
+  border-color: #f56c6c; }
+  .cs-form .el-form-item.is-error .el-input__inner:focus,
+  .cs-form .el-form-item.is-error .el-textarea__inner:focus,
+  .cs-form .el-message-box__input input.invalid:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem #fde3e3;
+            box-shadow: 0 0 0 0.2rem #fde3e3; }
 
 .register-bg {
   position: relative; }
@@ -15496,10 +15538,17 @@ button.swiper-pagination-bullet {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%; }
   @media (max-width: 991.98px) {
     .video .card-body h5 {
       font-size: 1rem !important; } }
+
+.video .card-title {
+  min-height: 60px;
+  font-weight: bold; }
 
 .video .cs-listen {
   width: 40px;
@@ -15523,24 +15572,26 @@ button.swiper-pagination-bullet {
 .hot .swiper-button-disabled {
   pointer-events: unset; }
 
-@media (max-width: 767.98px) {
-  .hot__card {
-    margin-right: -40px; } }
-
-@media (min-width: 768px) {
-  .hot__card {
-    -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transition: -webkit-transform .6s;
-    transition: -webkit-transform .6s;
-    -o-transition: transform .6s;
-    transition: transform .6s;
-    transition: transform .6s, -webkit-transform .6s; }
-    .hot__card:hover {
-      -webkit-transform: translateY(-10px);
-          -ms-transform: translateY(-10px);
-              transform: translateY(-10px); } }
+.hot__card {
+  display: block;
+  width: 100%; }
+  @media (max-width: 767.98px) {
+    .hot__card {
+      margin-right: -40px; } }
+  @media (min-width: 768px) {
+    .hot__card {
+      -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transition: -webkit-transform .6s;
+      transition: -webkit-transform .6s;
+      -o-transition: transform .6s;
+      transition: transform .6s;
+      transition: transform .6s, -webkit-transform .6s; }
+      .hot__card:hover {
+        -webkit-transform: translateY(-10px);
+            -ms-transform: translateY(-10px);
+                transform: translateY(-10px); } }
 
 .hot__img {
   position: relative; }
