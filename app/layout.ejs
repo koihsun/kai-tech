@@ -13,12 +13,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <%- include('header.html'); -%>
+    <div class="layout">
+        <%- include('header.html'); -%>
 
-    <main class="mb-auto">
-        <%- contents %>
-    </main>
-    <%- include('footer.html'); -%>
+        <main class="mb-auto">
+            <%- contents %>
+        </main>
+        <%- include('footer.html'); -%>
+    
+    </div>
 
     <a href="" id="gotop" class="btn-hover-focus"><i class="fa fa-angle-up"></i></a>
 

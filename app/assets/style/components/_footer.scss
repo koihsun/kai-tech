@@ -33,7 +33,7 @@
         &--block{
             width: 100%;
             @include media-breakpoint-up(md) {
-                width: auto;
+                width: calc(50% - 20px);
             }
             &:nth-of-type(1) {
                 margin-bottom: 3.75rem;
@@ -44,8 +44,10 @@
         }
         &--item li {
             padding-top: .25rem;
-            flex-basis: 25%;
             text-align: left;
+            &:not(:nth-last-of-type(1)) {
+                margin-right: 1.5rem;
+            }
         }
     }
     &__copyright {

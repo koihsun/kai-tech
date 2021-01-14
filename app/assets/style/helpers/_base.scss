@@ -1,11 +1,6 @@
 html, body {
     height: 100%;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 main {
     margin-top: 62px;
     @include media-breakpoint-up(md) {
@@ -25,4 +20,10 @@ h1, h2, h3, h4, h5, h6 {
 .modal-body {
     max-height: 90vh;
     overflow-y: auto;
+}
+.layout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
