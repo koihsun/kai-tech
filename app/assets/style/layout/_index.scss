@@ -34,6 +34,12 @@
             align-items: initial;
         }
     }
+    &__img {
+        @include media-breakpoint-down(sm) {
+            width: 50%;
+            flex-basis: 50%;
+        }
+    }
     &__img > div{
         padding-bottom: 100%;
         @include media-breakpoint-up(md) {

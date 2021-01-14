@@ -15523,6 +15523,12 @@ button.swiper-pagination-bullet {
           -ms-flex-align: initial;
               align-items: initial; } }
 
+@media (max-width: 767.98px) {
+  .video__img {
+    width: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; } }
+
 .video__img > div {
   padding-bottom: 100%; }
   @media (min-width: 768px) {
