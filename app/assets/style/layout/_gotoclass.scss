@@ -10,19 +10,29 @@
         position: absolute;
         right: 10px;
         bottom: 0;
-        width: 60px;
-        height: 60px;
+        width: 30px;
+        height: 30px;
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: center;
         background-position-y: center;
         background-image: url(../../assets/images/gotoclass.png);
+        @include media-breakpoint-up(lg) {
+            width: 60px;
+            height: 60px;
+        }
     }
 }
 .gotolist {
     background-color: $light;
     overflow-y: auto;
-    max-height: 372px;
+    max-height: 216px;
+    @include media-breakpoint-up(lg) {
+        max-height: 300px;
+    }
+    @include media-breakpoint-up(xl) {
+        min-height: 365px;
+    }
     &__head {
         display: flex;
         flex-wrap: nowrap;

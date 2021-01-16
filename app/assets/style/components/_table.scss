@@ -473,8 +473,8 @@
         }
         &::before {
             content: "";
-            width: 45px;
-            flex-basis: 45px;
+            width:  24px;
+            flex-basis:  24px;
             margin-left: 1rem;
             margin-right: 2rem;
         }
@@ -511,8 +511,8 @@
             }
             &::before {
                 content: "";
-                width: 45px;
-                flex-basis: 45px;
+                width:  24px;
+                flex-basis:  24px;
                 margin-left: 1rem;
                 margin-right: 2rem;
                 @include media-breakpoint-down(sm) {
@@ -540,8 +540,8 @@
         &--date {
             order: 2;
             @include media-breakpoint-up(md) {
-                width: 150px;
-                flex-basis: 150px;
+                width: 100px;
+                flex-basis: 100px;
                 order: 1;
                 text-align: left;
             }
@@ -551,8 +551,6 @@
             flex-basis: 120px;
             order: 1;
             @include media-breakpoint-up(md) {
-                width: 150px;
-                flex-basis: 150px;
                 order: 2;
             }
         }

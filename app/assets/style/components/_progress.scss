@@ -1,8 +1,8 @@
 .progress {
-    height: 40px;
+    min-height: 40px;
     background-color: transparent;
     border-radius: 0;
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         height: 72px;
     }
 }
@@ -13,8 +13,11 @@
     border-color: #dddddd;
     color: $black;
     width: calc((100% - 10px)/5);
+    @include media-breakpoint-down(sm) {
+        white-space: unset;
+    }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         width: calc((100% - 50px)/5);
         font-size: 1.25rem;
         margin-right: 0;
@@ -29,7 +32,7 @@
         border-color: inherit;
         margin-left: 10px;
         font-size: .75rem;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             margin-left: 50px;
             font-size: 1rem;
         }
@@ -44,7 +47,7 @@
         border: 24px solid transparent;
         border-left-width: 10px;
         border-right-width: 0;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             content: '';
             border: 40px solid transparent;
             border-left-width: 50px;
@@ -55,7 +58,7 @@
         border-left-color: $white;
         border-width: 24px;
         border-left-width: 12px;
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             border-width: 48px;
             border-left-width: 58px;
         }
@@ -63,6 +66,16 @@
     span::after {
         z-index: 2;
         border-left-color: inherit;
-        transform: translateY(-50%);
+        transform: translateY(-50%) translateX(-1px);
+    }
+
+    @include media-breakpoint-down(sm) {
+        line-height: normal;
+        span::after {
+            transform: translateY(-33%) translateX(-1px)
+        }
+        &:nth-of-type(2) span::after {
+            transform: translateY(-50%) translateX(-1px)
+        }
     }
 }
