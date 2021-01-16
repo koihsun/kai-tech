@@ -13543,6 +13543,9 @@ button.swiper-pagination-bullet {
       .header .nav__logo--img {
         width: 84px;
         vertical-align: initial; } }
+    @media (max-width: 374px) {
+      .header .nav__logo--img {
+        width: 120px; } }
   .header .nav__menu {
     background-color: #f5f5f5; }
     @media (min-width: 768px) {

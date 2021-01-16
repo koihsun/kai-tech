@@ -110,12 +110,11 @@ $(document).on('click', '.js-videoPoster', function (ev) {
   var $poster = $(this);
   var $wrapper = $('.js-videoWrapper');
   videoPlay($wrapper, $poster);
-}); // play the targeted video (and hide the poster frame)
+}); // play the targeted video
 
 function videoPlay($wrapper, $poster) {
   var $iframe = $wrapper.find('.js-videoIframe');
-  var src = $poster.data('src'); // hide poster
-  // add iframe src in, starting the video
+  var src = $poster.data('src'); // add iframe src in, starting the video
 
   $iframe.attr('src', src);
 } //isotope

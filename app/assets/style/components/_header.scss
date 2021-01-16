@@ -69,6 +69,9 @@
                 width: 84px;
                 vertical-align: initial;
             }
+            @media (max-width: 374px) {
+                width: 120px;
+             }
         }
     }
     .nav__menu {
