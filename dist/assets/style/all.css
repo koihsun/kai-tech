@@ -11664,6 +11664,12 @@ h1, h2, h3, h4, h5, h6 {
 .img-verify {
   width: 100px; }
 
+.embed-responsive:before {
+  padding-top: 0% !important; }
+
+.embed-responsive .plyr__video-wrapper {
+  padding-top: 55%; }
+
 /**
  * Swiper 6.3.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -14590,11 +14596,20 @@ button.swiper-pagination-bullet {
   color: #fff;
   background-color: #174e5f;
   font-size: 1.25rem;
-  padding: 1rem 2rem; }
+  padding: 1.5rem 1.25rem; }
   @media (min-width: 768px) {
     .cs-table[data-style="1"] .table__title {
       font-size: 1.5rem;
-      padding: 1rem 3rem; } }
+      padding: 1rem 2rem; } }
+  .cs-table[data-style="1"] .table__title::after {
+    content: attr(data-date);
+    float: right;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 2; }
+    @media (min-width: 768px) {
+      .cs-table[data-style="1"] .table__title::after {
+        line-height: 2.4; } }
 
 .cs-table[data-style="1"] .table__body {
   padding: 1rem 1.5rem; }
