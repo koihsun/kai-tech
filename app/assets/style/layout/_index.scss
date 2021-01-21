@@ -41,10 +41,7 @@
         }
     }
     &__img > div{
-        padding-bottom: 100%;
-        @include media-breakpoint-up(md) {
-            padding-bottom: 55%;
-        }
+        padding-bottom: 55%;
     }
 
     .card-body {

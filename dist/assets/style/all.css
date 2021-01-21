@@ -15582,10 +15582,7 @@ button.swiper-pagination-bullet {
         flex-basis: 50%; } }
 
 .video__img > div {
-  padding-bottom: 100%; }
-  @media (min-width: 768px) {
-    .video__img > div {
-      padding-bottom: 55%; } }
+  padding-bottom: 55%; }
 
 .video .card-body {
   display: -webkit-box;
