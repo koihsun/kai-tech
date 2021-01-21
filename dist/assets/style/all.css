@@ -14216,7 +14216,8 @@ button.swiper-pagination-bullet {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding: 0 1rem; }
   @media (min-width: 768px) {
     .cs-card[data-style="4"] .course__title {
       min-height: 3.75rem; } }
