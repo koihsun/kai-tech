@@ -147,3 +147,9 @@
 .embed-responsive .plyr__video-wrapper {
     padding-top: 55%;
 }
+//針對手機板的w-100
+.w-sm-100 {
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+}
