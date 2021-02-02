@@ -14007,7 +14007,7 @@ button.swiper-pagination-bullet {
 .cs-form[data-style="3"] .discount .delete {
   position: absolute;
   top: 0;
-  right: 15px;
+  right: 0;
   height: 40px;
   padding: 0;
   font-size: 25px;
@@ -14017,21 +14017,23 @@ button.swiper-pagination-bullet {
   border: none;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  background: #d1e9ed;
+  padding: 0 10px; }
   .cs-form[data-style="3"] .discount .delete:hover {
-    color: #174e5f; }
+    color: #f3b7bd; }
 
-.cs-form[data-style="3"] input[type=checkbox] {
+.cs-form[data-style="3"] input[type=checkbox], .cs-form[data-style="3"] input[type=radio] {
   display: none; }
 
-.cs-form[data-style="3"] input[type=checkbox] ~ label {
+.cs-form[data-style="3"] input[type=checkbox] ~ label, .cs-form[data-style="3"] input[type=radio] ~ label {
   position: relative;
   cursor: pointer;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
 
-.cs-form[data-style="3"] input[type=checkbox] ~ label::before {
+.cs-form[data-style="3"] input[type=checkbox] ~ label::before, .cs-form[data-style="3"] input[type=radio] ~ label::before {
   content: "";
   display: inline-block;
   background-color: transparent;
@@ -14042,10 +14044,10 @@ button.swiper-pagination-bullet {
   vertical-align: middle;
   margin-right: 0.25rem; }
 
-.cs-form[data-style="3"] input[type=checkbox]:checked ~ label::before {
+.cs-form[data-style="3"] input[type=checkbox]:checked ~ label::before, .cs-form[data-style="3"] input[type=radio]:checked ~ label::before {
   background-color: #0096a4; }
 
-.cs-form[data-style="3"] input[type=checkbox]:checked ~ label::after {
+.cs-form[data-style="3"] input[type=checkbox]:checked ~ label::after, .cs-form[data-style="3"] input[type=radio]:checked ~ label::after {
   content: "";
   position: absolute;
   left: 10px;

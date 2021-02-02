@@ -113,7 +113,7 @@
     .discount .delete {
         position: absolute;
         top: 0;
-        right: 15px;
+        right: 0;
         height: 40px;
         padding: 0;
         font-size: 25px;
@@ -122,19 +122,21 @@
         border-radius: 0;
         border: none;
         transition: .3s;
+        background: #d1e9ed;
+        padding: 0 10px;
         &:hover {
-            color: $accent;
+            color: lighten($red, 30%);
         }
     }
-    input[type=checkbox] {
+    input[type=checkbox], input[type=radio] {
         display: none;
     }
-    input[type=checkbox] ~ label {
+    input[type=checkbox] ~ label, input[type=radio] ~ label {
         position: relative;
         cursor: pointer;
         flex: 1 0 auto;
     }
-    input[type=checkbox] ~ label::before {
+    input[type=checkbox] ~ label::before, input[type=radio] ~ label::before {
         content: "";
         display: inline-block;
         background-color: transparent;
@@ -145,10 +147,10 @@
         vertical-align: middle;
         margin-right: 0.25rem;
     }
-    input[type=checkbox]:checked ~ label::before {
+    input[type=checkbox]:checked ~ label::before, input[type=radio]:checked ~ label::before {
         background-color: $primary;
     }
-    input[type=checkbox]:checked ~ label::after {
+    input[type=checkbox]:checked ~ label::after, input[type=radio]:checked ~ label::after {
         content: "";
         position: absolute;
         left: 10px;
