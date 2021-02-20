@@ -14492,7 +14492,7 @@ button.swiper-pagination-bullet {
     .cs-select[data-style="1"] .select__btn, .cs-select[data-style="1"] .select__option {
       width: 66%;
       margin: 0;
-      padding: 1rem 2rem;
+      padding: .75rem 2rem;
       border: none; } }
 
 .cs-select[data-style="1"] .select__btn {
@@ -14515,10 +14515,14 @@ button.swiper-pagination-bullet {
           transform: translate3d(0, 0, 0) !important;
   border-radius: 0;
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  overflow-y: auto;
+  max-height: 300px;
+  border-radius: 10px; }
   @media (min-width: 768px) {
     .cs-select[data-style="1"] .dropdown-menu {
-      width: 66%; } }
+      width: 66%;
+      max-height: 500px; } }
   .cs-select[data-style="1"] .dropdown-menu .select__option {
     border-bottom: solid 0.5px #d8d8d8;
     cursor: pointer;
